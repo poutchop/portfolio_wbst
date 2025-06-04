@@ -92,16 +92,43 @@
   <main class="main">
 
     <!-- Hero Section -->
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pout Chop Jal's Portfolio</title>
+    </head>
+<body>
+
     <section id="hero" class="hero section dark-background">
+        <img src="img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <h2>Pout Chop Jal</h2>
+            <p>I'm a <span class="typed"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        </div>
+    </section><section id="about" class="about section">
+        </section><script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-      <img src="img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Pout Chop Jal</h2>
-        <p>I'm a <span class="typed" data-typed-items=>Designer, <br/>Photographer, <br/>Freelancer, <br/>Financial Analyst, <br/>Business Administration Junior, <br/>Excel Data Analyst</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var typed = new Typed('.typed', {
+          strings: [
+            "Designer",
+            "Photographer",
+            "Freelancer",
+            "Financial Analyst",
+            "Business Administration Junior",
+            "Excel Data Analyst"
+          ],
+          typeSpeed: 50,
+          backSpeed: 30,
+          loop: true
+        });
+      });
+    </script>
+</body>
+</html>
 
     <!-- About Section -->
     <section id="about" class="about section">
