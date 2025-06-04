@@ -8,6 +8,98 @@
   <meta content="Pout Chop Jal's personal portfolio. Business Administration Junior skilled in data analysis, strategic thinking, web development, and UI/UX design. Fluent in Arabic and English." name="description">
   <meta content="portfolio, web developer, UI/UX designer, business administration, data analysis, strategic thinking, Ashesi University, Ghana, Arabic, English, Pout Chop Jal" name="keywords">
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to animate a single progress bar
+    function animateProgressBar(progressBar) {
+        const value = parseInt(progressBar.getAttribute('aria-valuenow'), 10);
+        progressBar.style.width = value + '%';
+    }
+
+    // Get all progress bars
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    // Check if a library like AOS (Animate On Scroll) is used or just animate on load
+    // If you are using a library like AOS, you might trigger this based on AOS events.
+    // For simplicity, this example animates on page load.
+    progressBars.forEach(bar => {
+        animateProgressBar(bar);
+    });
+
+    // OPTIONAL: If you want to animate when the section comes into view (more advanced)
+    // This requires an Intersection Observer or a dedicated library (like Waypoints).
+    // Example using Intersection Observer:
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillBarsInView = entry.target.querySelectorAll('.progress-bar');
+                skillBarsInView.forEach(bar => {
+                    animateProgressBar(bar);
+                });
+                // Stop observing once animated
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.5 // Trigger when 50% of the element is visible
+    });
+
+    // Observe the section containing the progress bars (you'll need to adjust 'section-with-skills')
+    const skillsSection = document.getElementById('about'); // Assuming your skills are in the #about section
+    if (skillsSection) {
+        observer.observe(skillsSection);
+    }
+});
+
+.progress {
+  height: 20px; /* Adjust height as needed */
+  background-color: #e9ecef; /* Light background for the track */
+  border-radius: 5px;
+  overflow: hidden; /* Ensures content stays within rounded corners */
+  margin-bottom: 20px; /* Space between progress bars */
+  position: relative; /* For absolute positioning of skill text */
+}
+
+.progress .skill {
+  padding: 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif; /* Example font */
+  color: #333; /* Skill text color */
+  white-space: nowrap; /* Prevents skill name from wrapping */
+  position: absolute;
+  left: 0;
+  z-index: 1; /* Ensures skill name is above the bar */
+  line-height: 20px; /* Aligns text vertically with bar height */
+}
+
+.progress .skill i {
+  font-style: normal;
+  float: right;
+}
+
+.progress-bar-wrap {
+  background: none; /* No background for the wrap itself */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-bar {
+  width: 0; /* Starts at 0% and will be filled by JS/CSS */
+  height: 100%;
+  background-color: #0d6efd; /* Example bar color (e.g., blue) */
+  transition: width 1.5s ease-in-out; /* Smooth animation when width changes */
+  border-radius: 5px;
+}
+
+  
+  
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
