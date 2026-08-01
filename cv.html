@@ -3,56 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pout Chop Jal – Creative CV</title>
+  <title>Pout Chop Jal – Premium CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #121212;
-      --bg-card: rgba(255, 255, 255, 0.08);
+      --bg: #0a0a0a;
+      --bg-card: rgba(255,255,255,0.08);
       --text-primary: #fafafa;
       --accent: #00d1b2;
       --accent-hover: #00b3a1;
-      --glass: rgba(255,255,255,0.12);
+      --shadow: rgba(0,0,0,0.4);
     }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text-primary);
-      line-height: 1.6;
-    }
-    .container {max-width: 1100px;margin: 0 auto;padding: 2rem;}
-    .header {text-align:center;margin-bottom:3rem;}
-    .header h1 {font-size:2.8rem;font-weight:700;margin:0;}
-    .header p {font-size:1.1rem;opacity:0.85;}
-    .card {
-      background: var(--bg-card);
-      backdrop-filter: blur(12px);
-      border-radius: 12px;
-      padding: 1.8rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .card:hover {transform: translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,0.3);}
-    .section-title {font-size:1.6rem;font-weight:600;margin-bottom:1rem;color:var(--accent);}
-    ul {list-style:none;padding:0;}
-    li {margin-bottom:0.6rem;}
-    a {color:var(--accent);text-decoration:none;transition:color 0.2s;}
-    a:hover {color:var(--accent-hover);}
-    .grid-2 {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;}
     @media (prefers-color-scheme: light) {
-      :root {--bg:#f5f5f5;--bg-card:rgba(255,255,255,0.7);--text-primary:#222;}
+      :root {
+        --bg: #f5f5f5;
+        --bg-card: rgba(0,0,0,0.05);
+        --text-primary: #222;
+        --accent: #006d5b;
+        --accent-hover: #005c4c;
+      }
     }
+    body {margin:0; font-family:'Inter',sans-serif; background:var(--bg); color:var(--text-primary); line-height:1.6;}
+    .container {max-width:1100px; margin:auto; padding:2rem;}
+    .toggle {position:fixed; top:1rem; right:1rem; cursor:pointer; background:var(--bg-card); border:none; color:var(--text-primary); padding:0.5rem 1rem; border-radius:8px;}
+    .hero {display:flex; flex-direction:column; align-items:center; text-align:center; margin-bottom:3rem;}
+    .hero img {border-radius:50%; width:180px; height:180px; object-fit:cover; margin-bottom:1rem; box-shadow:0 4px 12px var(--shadow);}
+    .hero h1 {font-size:2.4rem; margin:0;}
+    .hero p {margin:0.4rem 0; opacity:0.85;}
+    .card {background:var(--bg-card); backdrop-filter:blur(12px); border-radius:12px; padding:1.8rem; margin-bottom:2rem; box-shadow:0 8px 32px var(--shadow); transition:transform 0.25s ease, box-shadow 0.25s ease;}
+    .card:hover {transform:translateY(-4px); box-shadow:0 12px 36px var(--shadow);}
+    .section-title {font-size:1.6rem; font-weight:600; margin-bottom:1rem; color:var(--accent);}
+    ul {list-style:none; padding:0;}
+    li {margin-bottom:0.6rem;}
+    a {color:var(--accent); text-decoration:none; transition:color 0.2s;}
+    a:hover {color:var(--accent-hover);}
+    .grid-2 {display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem;}
   </style>
+  <script>
+    function toggleTheme(){
+      const html=document.documentElement;
+      html.dataset.theme = (html.dataset.theme==='dark') ? 'light' : 'dark';
+    }
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.dataset.theme='dark'}
+  </script>
 </head>
 <body>
+  <button class="toggle" onclick="toggleTheme()">Toggle Theme</button>
   <div class="container">
-    <header class="header">
+    <section class="hero">
+      <img src="https://via.placeholder.com/180" alt="Profile picture" />
       <h1>Pout Chop Jal Madeng</h1>
       <p>Business Administration Senior | Aspiring Investment Banker & Designer</p>
-      <p>📞 +233 594 303 507 | 📧 <a href="mailto:poutchopj@gmail.com">poutchopj@gmail.com</a></p>
-    </header>
+      <p>📞 +233 594 303 507 • 📧 <a href="mailto:poutchopj@gmail.com">poutchopj@gmail.com</a> • 📍 Accra, Ghana</p>
+    </section>
 
     <section class="card">
       <h2 class="section-title">About Me</h2>
@@ -79,19 +82,19 @@
     <section class="card">
       <h2 class="section-title">Work Experience</h2>
       <ul>
-        <li><strong>Carbon Clarity – Founder</strong> (Jan 2025 – Present)
+        <li><strong>Founder – Carbon Clarity</strong> (Jan 2025 – Present)
           <ul>
             <li>Led the development of “Visual Bridge”, winning 1st place at the IOM × AI Hackathon.</li>
             <li>Secured partnership with Catalyste+ and Global Affairs Canada.</li>
           </ul>
         </li>
-        <li><strong>Microsoft × Ashesi – Research Collaborator</strong> (Feb 2026 – Apr 2026)
+        <li><strong>Research Collaborator – Microsoft × Ashesi University</strong> (Feb 2026 – Apr 2026)
           <ul>
-            <li>Created the Commuter Fluidity Index, reducing assessment time by 40 %.</li>
+            <li>Created the Commuter Fluidity Index, cutting assessment time by 40 %.</li>
             <li>Delivered five evidence‑based recommendations for urban mobility policy.</li>
           </ul>
         </li>
-        <li><strong>Graduate Guidance Group G3 – Data & Policy Lead</strong> (Apr 2026 – Present)
+        <li><strong>Data & Policy Lead – Graduate Guidance Group G3</strong> (Apr 2026 – Present)
           <ul>
             <li>Audited 54 African country profiles, boosting dataset accuracy by 35 %.</li>
             <li>Highlighted 150 % visa‑cost disparity, informing policy advocacy.</li>
