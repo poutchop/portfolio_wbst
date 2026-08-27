@@ -202,6 +202,32 @@ document.addEventListener('DOMContentLoaded', function () {
       }, false);
     });
 
+    // Synchronize card filter triggers with Isotope grid
+const cardFilterButtons = document.querySelectorAll('.filter-trigger');
+cardFilterButtons.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    const selectedFilter = this.getAttribute('data-filter');
+    
+    // Update active state on the text filter list
+    document.querySelectorAll('.portfolio-filters li').forEach(function (tab) {
+      if (tab.getAttribute('data-filter') === selectedFilter) {
+        tab.classList.add('filter-active');
+      } else {
+        tab.classList.remove('filter-active');
+      }
+    });
+
+    // Arrange Isotope grid
+    const container = document.querySelector('.isotope-container');
+    if (container && typeof Isotope !== 'undefined') {
+      const isoInstance = Isotope.data(container);
+      if (isoInstance) {
+        isoInstance.arrange({ filter: selectedFilter });
+      }
+    }
+  });
+});
+
   });
 
   /**
