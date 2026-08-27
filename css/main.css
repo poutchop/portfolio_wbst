@@ -618,6 +618,15 @@ section,
   }
 }
 
+.hero.section {
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero-slider .swiper-slide img {
+  filter: brightness(45%);
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
