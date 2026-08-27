@@ -30,7 +30,6 @@
         headerToggle();
       }
     });
-
   });
 
   /**
@@ -55,6 +54,44 @@
     });
   }
 
+document.addEventListener('DOMContentLoaded', function () {
+  
+  // 1. Initialize Hero Background Swiper
+  if (typeof Swiper !== 'undefined') {
+    new Swiper('.hero-slider', {
+      loop: true,
+      speed: 1000,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false
+      },
+      allowTouchMove: false
+    });
+  }
+
+  // 2. Initialize Typed Text
+  const selectTyped = document.querySelector('.typed');
+  if (selectTyped && typeof Typed !== 'undefined') {
+    let typed_strings = selectTyped.getAttribute('data-typed-items');
+    if (typed_strings) {
+      typed_strings = typed_strings.split(',').map(s => s.trim());
+      new Typed('.typed', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000
+      });
+    }
+  }
+
+});
+
+  
   /**
    * Scroll top button
    */
