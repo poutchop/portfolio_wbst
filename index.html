@@ -309,127 +309,218 @@
       </div>
     </section>
 
-<!-- ======= Unified Portfolio Section ======= -->
-<section id="portfolio" class="portfolio section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Featured Ventures & Research</h2>
-    <p>Explore my initiatives across climate solutions, data policy, and technical research.</p>
+<!-- ======= Interactive Category Hub & Filter Navigation ======= -->
+<div class="portfolio-category-wrapper mb-5" data-aos="fade-up" data-aos-delay="100">
+  
+  <!-- Category Action Cards / Direct Links -->
+  <div class="row g-3 mb-4">
+    
+    <!-- All Highlights -->
+    <div class="col-lg-3 col-md-6">
+      <div class="category-card p-3 rounded shadow-sm text-center h-100 bg-white border">
+        <div class="icon-box text-primary fs-3 mb-2">
+          <i class="bi bi-grid-fill"></i>
+        </div>
+        <h6 class="fw-bold mb-1">All Highlights</h6>
+        <p class="small text-muted mb-3">Complete archive across all projects & research.</p>
+        <div class="d-flex justify-content-center gap-2">
+          <button type="button" class="btn btn-sm btn-outline-primary filter-trigger" data-filter="*">Filter Grid</button>
+          <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="Open Complete Drive Archive">
+            <i class="bi bi-folder-symlink"></i> Docs
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Climate & Ventures -->
+    <div class="col-lg-3 col-md-6">
+      <div class="category-card p-3 rounded shadow-sm text-center h-100 bg-white border">
+        <div class="icon-box text-success fs-3 mb-2">
+          <i class="bi bi-tree-fill"></i>
+        </div>
+        <h6 class="fw-bold mb-1">Climate &amp; Ventures</h6>
+        <p class="small text-muted mb-3">Carbon Clarity, MRV systems &amp; clean-tech enterprise.</p>
+        <div class="d-flex justify-content-center gap-2">
+          <button type="button" class="btn btn-sm btn-outline-success filter-trigger" data-filter=".filter-climate">Filter Grid</button>
+          <a href="#climate-info-modal" data-bs-toggle="modal" class="btn btn-sm btn-success">
+            <i class="bi bi-info-circle"></i> View Info
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Policy & Economic Research -->
+    <div class="col-lg-3 col-md-6">
+      <div class="category-card p-3 rounded shadow-sm text-center h-100 bg-white border">
+        <div class="icon-box text-info fs-3 mb-2">
+          <i class="bi bi-file-earmark-bar-graph-fill"></i>
+        </div>
+        <h6 class="fw-bold mb-1">Policy &amp; Research</h6>
+        <p class="small text-muted mb-3">Visa matrices, transit elasticity &amp; SERVQUAL thesis.</p>
+        <div class="d-flex justify-content-center gap-2">
+          <button type="button" class="btn btn-sm btn-outline-info filter-trigger" data-filter=".filter-research">Filter Grid</button>
+          <a href="#policy-info-modal" data-bs-toggle="modal" class="btn btn-sm btn-info text-white">
+            <i class="bi bi-info-circle"></i> View Info
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product & Design -->
+    <div class="col-lg-3 col-md-6">
+      <div class="category-card p-3 rounded shadow-sm text-center h-100 bg-white border">
+        <div class="icon-box text-warning fs-3 mb-2">
+          <i class="bi bi-palette-fill"></i>
+        </div>
+        <h6 class="fw-bold mb-1">Product &amp; Design</h6>
+        <p class="small text-muted mb-3">Visual Bridge UI/UX, tools &amp; digital frontends.</p>
+        <div class="d-flex justify-content-center gap-2">
+          <button type="button" class="btn btn-sm btn-outline-warning filter-trigger" data-filter=".filter-tech">Filter Grid</button>
+          <a href="#design-info-modal" data-bs-toggle="modal" class="btn btn-sm btn-warning text-dark">
+            <i class="bi bi-info-circle"></i> View Info
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="container">
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+  <!-- Traditional Horizontal Filter Bar -->
+  <ul class="portfolio-filters isotope-filters text-center list-inline mb-0">
+    <li data-filter="*" class="list-inline-item filter-active">All Highlights</li>
+    <li data-filter=".filter-climate" class="list-inline-item">Climate &amp; Ventures</li>
+    <li data-filter=".filter-research" class="list-inline-item">Policy &amp; Economic Research</li>
+    <li data-filter=".filter-tech" class="list-inline-item">Product &amp; Design</li>
+  </ul>
+</div>
 
-      <!-- Interactive Filter Buttons -->
-      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">All Highlights</li>
-        <li data-filter=".filter-climate">Climate & Ventures</li>
-        <li data-filter=".filter-research">Policy & Economic Research</li>
-        <li data-filter=".filter-tech">Product & Design</li>
-      </ul>
+<!-- =========================================================
+     CATEGORY DETAIL MODALS (Information Hub for each Pillar)
+========================================================= -->
 
-      <!-- Portfolio Grid Items -->
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-        <!-- Item 1: Carbon Clarity (Climate & Ventures) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-climate">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/award-e.jpeg" class="img-fluid rounded-top" alt="Carbon Clarity Venture">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-primary mb-2">Climate Venture</span>
-              <h4>Carbon Clarity NFP</h4>
-              <p class="small text-muted">A digital MRV & transparency system linking verified local green initiatives to international carbon finance.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/award-e.jpeg" title="Carbon Clarity" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
+<!-- Modal 1: Climate & Ventures -->
+<div class="modal fade" id="climate-info-modal" tabindex="-1" aria-labelledby="climateModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title fw-bold" id="climateModalLabel"><i class="bi bi-tree me-2"></i>Climate &amp; Ventures Information</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <h6 class="fw-bold text-success">Pillar Overview</h6>
+        <p class="text-muted">
+          Focused on structuring carbon finance mechanisms, digital Measurement, Reporting, and Verification (dMRV), and connecting grassroot ecological initiatives in West and Southern Africa to the voluntary carbon market.
+        </p>
+        <h6 class="fw-bold text-dark mt-3">Featured Deliverables &amp; Documentation</h6>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+            <div>
+              <strong>Carbon Clarity NFP Brief</strong>
+              <div class="small text-muted">Partnership model under Global Affairs Canada / Catalyste+</div>
             </div>
-          </div>
-        </div>
-
-        <!-- Item 2: Visual Bridge (Product & Design / Climate) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech filter-climate">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/visual-bridge.jpg" class="img-fluid rounded-top" alt="Visual Bridge Interface">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-success mb-2">1st Place Award</span>
-              <h4>Visual Bridge Data Tool</h4>
-              <p class="small text-muted">Award-winning data platform created for the IOM Mozambique x AI for Infrastructure Hackathon.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/visual-bridge.jpg" title="Visual Bridge Tool" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">Open Dossier</a>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+            <div>
+              <strong>Farmer Delivery Enterprise (FDE)</strong>
+              <div class="small text-muted">Agent-based supply chain prototype &amp; food spoilage reduction data</div>
             </div>
-          </div>
-        </div>
-
-        <!-- Item 3: Pan-African Visa Matrix (Policy & Research) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/visa-matrix.jpg" class="img-fluid rounded-top" alt="Pan-African Policy Matrix">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-info text-dark mb-2">Policy Analysis</span>
-              <h4>Pan-African Mobility Matrix</h4>
-              <p class="small text-muted">Audited cross-border policies across 54 countries to uncover regulatory and financial frictions.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/visa-matrix.jpg" title="Mobility Matrix" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 4: Microsoft Transit Study (Policy & Research) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/transit-study.jpg" class="img-fluid rounded-top" alt="Accra Transit Case Study">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-dark mb-2">Urban Analytics</span>
-              <h4>Informal Transit Case Study</h4>
-              <p class="small text-muted">Co-developed the Commuter Fluidity Index with Microsoft & Ashesi University.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/transit-study.jpg" title="Transit Study" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 5: Farmer Delivery Enterprise (Climate & Ventures) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-climate">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/business-market-entry.jpeg" class="img-fluid rounded-top" alt="Farmer Delivery Enterprise">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-warning text-dark mb-2">Supply Chain</span>
-              <h4>Farmer Delivery Enterprise</h4>
-              <p class="small text-muted">Designed an agent-based supply chain prototype eliminating middlemen for smallholder farmers.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/business-market-entry.jpeg" title="Farmer Delivery Enterprise" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 6: SERVQUAL Capstone (Policy & Research) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/research-consumer.jpg" class="img-fluid rounded-top" alt="Fintech Customer Loyalty Research">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-secondary mb-2">Academic Thesis</span>
-              <h4>Fintech Customer Loyalty</h4>
-              <p class="small text-muted">Rigorous empirical thesis identifying service quality drivers in Ghanaian rural mobile money networks.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/research-consumer.jpg" title="Fintech Thesis" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">Open Report</a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-success">Browse Full Category Drive</a>
       </div>
     </div>
   </div>
-</section>
+</div>
+
+<!-- Modal 2: Policy & Economic Research -->
+<div class="modal fade" id="policy-info-modal" tabindex="-1" aria-labelledby="policyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-header bg-info text-white">
+        <h5 class="modal-title fw-bold" id="policyModalLabel"><i class="bi bi-file-earmark-bar-graph me-2"></i>Policy &amp; Economic Research Information</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <h6 class="fw-bold text-info">Pillar Overview</h6>
+        <p class="text-muted">
+          Quantitative and qualitative research analyzing policy bottlenecks, intra-African mobility hurdles, commuter efficiency indices, and customer retention metrics across fintech institutions.
+        </p>
+        <h6 class="fw-bold text-dark mt-3">Featured Research Papers &amp; Studies</h6>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+            <div>
+              <strong>Pan-African Visa &amp; Mobility Matrix</strong>
+              <div class="small text-muted">54-country dataset identifying 150% cost discrepancies for scholars</div>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info">View Study</a>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+            <div>
+              <strong>Microsoft x Ashesi Informal Transit Study</strong>
+              <div class="small text-muted">Commuter Fluidity Index mapping 12+ urban routes in Accra</div>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info">View Study</a>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+            <div>
+              <strong>Fintech Loyalty Capstone (SERVQUAL)</strong>
+              <div class="small text-muted">Empirical study on rural Ghanaian mobile banking retention</div>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info">Read Thesis</a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-info text-white">Browse Full Category Drive</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3: Product & Design -->
+<div class="modal fade" id="design-info-modal" tabindex="-1" aria-labelledby="designModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="designModalLabel"><i class="bi bi-palette me-2"></i>Product &amp; UI/UX Information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <h6 class="fw-bold text-dark">Pillar Overview</h6>
+        <p class="text-muted">
+          Transforming data transparency models into accessible digital interfaces, wireframes, and responsive user-facing tools.
+        </p>
+        <h6 class="fw-bold text-dark mt-3">Featured Prototypes &amp; Systems</h6>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+            <div>
+              <strong>Visual Bridge Data Tool Prototype</strong>
+              <div class="small text-muted">1st Place IOM Mozambique x AI for Infrastructure UI/UX solution</div>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-warning text-dark">View Assets</a>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+            <div>
+              <strong>Portfolio &amp; Data System Interfaces</strong>
+              <div class="small text-muted">Front-end architecture and standardized visual workflows</div>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-warning text-dark">View Assets</a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-warning text-dark">Browse Full Category Drive</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Vendor JS Files -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
