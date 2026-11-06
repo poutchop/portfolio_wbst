@@ -199,6 +199,14 @@ section.block { padding-block: clamp(3.5rem, 8vw, 6.5rem); border-top: 1px solid
 .shots { display:grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); gap:.5rem; margin: 1.1rem 0 .2rem; max-width: 40rem; aspect-ratio: 2.4 / 1; }
 .shots img { width:100%; height:100%; object-fit:cover; border-radius: 3px; }
 .shots img:first-child { grid-row: 1 / span 2; }
+.dossier { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .75rem; margin-top: 1.4rem; max-width: 44rem; }
+.doc { display:flex; flex-direction:column; text-decoration:none; border:1px solid var(--line); border-radius:4px; overflow:hidden; background: var(--surface); }
+.doc:hover { border-color: var(--k); }
+.doc img, .doc .sheet { width:100%; height: 8.5rem; flex: none; object-fit: cover; object-position: top; background: var(--paper); border-bottom: 1px solid var(--line); }
+.doc .sheet { box-sizing: border-box; display:flex; flex-direction:column; justify-content:center; padding: .8rem; font-size: .78rem; color: var(--muted); line-height:1.45; background: var(--canopy-tint); }
+.doc .sheet b { font-family: var(--serif); font-size: 1.5rem; font-weight:500; color: var(--canopy); line-height:1.1; }
+.doc > span:last-child { padding: .6rem .7rem .7rem; font-size: .8rem; line-height:1.35; display:grid; gap:.15rem; }
+.doc > span:last-child small { color: var(--muted); }
 .project .meta { font-size: var(--step--1); color: var(--muted); display:grid; gap:.8rem; align-content:start; }
 .project .meta strong { display:block; color: var(--ink); font-weight: 600; }
 .project .meta a { color: var(--k); font-weight: 600; }
@@ -334,6 +342,7 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
   .honors-grid { grid-template-columns: minmax(0,1fr); }
   .trophy { max-width: 18rem; }
   .gallery { grid-template-columns: minmax(0,1fr) minmax(0,1fr); grid-template-rows: 13rem 16rem 13rem; }
+  .dossier { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .g-a { grid-column: 1 / -1; grid-row: 1; } .g-b { grid-column: 1; grid-row: 2; } .g-c { grid-column: 2; grid-row: 2; } .g-d { grid-column: 1 / -1; grid-row: 3; }
   .row2 { grid-template-columns: minmax(0,1fr); }
 }
@@ -443,7 +452,7 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
           <div class="meta">
             <div><strong>Target</strong>Up to 50% less spent on firewood, to be confirmed by the study</div>
             <div><strong>Status</strong>Phase 1 of 3. Stove, sensors and payments are planned, not yet deployed</div>
-            <a href="img/carbon-clarity-flyer.pdf" target="_blank" rel="noopener">Read the project flyer</a>
+            <a href="docs/carbon-clarity-flyer.pdf" target="_blank" rel="noopener">Read the project flyer</a>
           </div>
         </li>
 
@@ -470,18 +479,29 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
         <li class="project k-o" data-areas="product climate">
           <div class="figure"><b>1st</b><span>of 8 international teams</span></div>
           <div class="body">
-            <h3>Visual Bridge</h3>
+            <h3 id="mozambique">Visual Bridge: fair carbon finance for displaced families in Mozambique</h3>
             <div class="tags"><span class="tag">Product &amp; design</span><span class="tag k-c">Climate &amp; ventures</span></div>
-            <p>A data tool that makes carbon accounting legible to the people a project affects, not only to auditors and buyers.</p>
+            <p>In 2024, IOM Mozambique gave improved cookstoves to displaced families, but the carbon credits were never registered and no payments arrived. Our team designed Carbon Clarity, a transparency system that works inside existing carbon projects so families can see what their credits sell for and what they should receive.</p>
             <ul class="did">
-              <li>Designed the concept and interface that took first place at the IOM Mozambique × AL for Infrastructure hackathon.</li>
-              <li>Turned the transparency gap in carbon markets into a visual flow a non-specialist can follow.</li>
+              <li>A learning hub that teaches carbon literacy through savings groups (VSLAs), community radio, public price boards and a visual household guide in Emakhuwa, Portuguese and English.</li>
+              <li>Accountability tools: itemized picture receipts, elected oversight committees with seats for women, youth and people with disabilities, and complaints resolved within 14 days.</li>
+              <li>Tested with 50 household representatives at three sites. Switching to an icon-based price board clearly improved understanding.</li>
+              <li>Ranked first of three teams at Demo Day. IOM and Bridge Carbon are now reviewing the concept for IOM's improved cookstoves project.</li>
             </ul>
+            <div class="dossier" aria-label="Hackathon documents">
+              <a class="doc" href="docs/carbon-clarity-iom-report.pdf" target="_blank" rel="noopener"><img src="docs/cover-iom-report.jpg" alt="" width="340" height="440" loading="lazy"><span><b>Report for IOM Mozambique</b><small>24 pages, PDF, Jan 2026</small></span></a>
+              <a class="doc" href="docs/carbon-clarity-full-report.pdf" target="_blank" rel="noopener"><img src="docs/cover-full-report.jpg" alt="" width="340" height="440" loading="lazy"><span><b>Full final report</b><small>106 pages, PDF, 10 MB</small></span></a>
+              <a class="doc" href="docs/emakhuwa-household-guide.pdf" target="_blank" rel="noopener"><img src="docs/cover-emakhuwa-guide.jpg" alt="" width="340" height="440" loading="lazy"><span><b>Household guide</b><small>Emakhuwa, Portuguese, English. 11 pages</small></span></a>
+              <a class="doc doc-text" href="docs/carbon-clarity-phase1-budget.xlsx"><span class="sheet"><b>$97,900</b>18 months<br>2 sites<br>500 households</span><span><b>Phase 1 budget</b><small>Excel, with funding and break-even</small></span></a>
+              <a class="doc" href="docs/hackathon-results-email.jpg" target="_blank" rel="noopener"><img src="docs/hackathon-results-email.jpg" alt="" width="1288" height="461" loading="lazy" class="wide" style="object-position: 0 18%"><span><b>Demo Day results</b><small>African Leadership Academy, 25 Feb 2026</small></span></a>
+              <a class="doc" href="docs/hackathon-winning-contract-p1.jpg" target="_blank" rel="noopener"><img src="docs/hackathon-winning-contract-p1.jpg" alt="" width="910" height="596" loading="lazy" class="wide"><span><b>Winning team award</b><small>$2,000 prize letter, excerpt</small></span></a>
+            </div>
           </div>
           <div class="meta">
-            <div><strong>Result</strong>First place, Feb 2026</div>
-            <div><strong>Role</strong>Concept and product design</div>
-            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener">See the prototype</a>
+            <div><strong>Result</strong>First place, Team 7, Feb 2026</div>
+            <div><strong>Event</strong>ALA &amp; IOM UN Migration Equity and Carbon Inclusion Hackathon</div>
+            <div><strong>Prize</strong>$2,000</div>
+            <div><strong>Sites</strong>9 resettlement sites in Cabo Delgado, Nampula and Niassa</div>
           </div>
         </li>
 
@@ -775,9 +795,9 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
           <li>
             <time datetime="2026-02">Feb 2026</time>
             <div>
-              <h3>First place, IOM Mozambique hackathon</h3>
-              <p class="where">With the African Leadership community</p>
-              <p class="desc">Top prize among 8 international teams for Visual Bridge, a carbon accounting transparency tool.</p>
+              <h3>First place, ALA &amp; IOM UN Migration Equity and Carbon Inclusion Hackathon</h3>
+              <p class="where">African Leadership Academy, AL for Infrastructure and IOM Mozambique</p>
+              <p class="desc">Team 7 won first place and the $2,000 prize for Carbon Clarity's Visual Bridge transparency system. <a href="#mozambique">See the documents</a></p>
             </div>
           </li>
           <li>
