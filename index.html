@@ -350,6 +350,21 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
 .ledger-src { font-size: .8rem; color: var(--muted); margin-top: 1rem; max-width: 70ch; }
 .ledger-src a { color: inherit; }
 
+
+/* ---------- research & writing ---------- */
+.pubs { list-style:none; margin:0; padding:0; border-top: 1px solid var(--line); }
+.pub { display:grid; grid-template-columns: minmax(0, 5.5rem) minmax(0, 1fr) auto; gap: .3rem 1.6rem; padding-block: 1.25rem; border-bottom: 1px solid var(--line); align-items: baseline; }
+.pub .yr { font-size: var(--step--1); color: var(--muted); font-variant-numeric: tabular-nums; }
+.pub h3 { font-size: var(--step-1); font-weight: 500; line-height: 1.3; }
+.pub h3 a { text-decoration: none; }
+.pub h3 a:hover { text-decoration: underline; }
+.pub .cite { font-size: var(--step--1); color: var(--muted); margin-top: .3rem; max-width: 70ch; }
+.pub .cite b { color: var(--ink); font-weight: 600; }
+.pub .kind { font-size: .75rem; font-weight: 600; padding: .25rem .55rem; border-radius: 3px; white-space: nowrap; background: var(--nile-tint); color: var(--nile); }
+.pub .kind.wip { background: var(--ochre-tint); color: var(--ochre); }
+.pub .kind.thesis { background: var(--canopy-tint); color: var(--canopy); }
+@media (max-width: 640px) { .pub { grid-template-columns: minmax(0,1fr) auto; } .pub .yr { grid-column: 1 / -1; } }
+
 /* ---------- responsive ---------- */
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: minmax(0,1fr); }
@@ -398,6 +413,7 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
     <a class="brand" href="#top">Pout Chop Jal</a>
     <nav class="nav" aria-label="Sections">
       <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#research">Research</a>
       <a class="nav-link" href="#experience">Experience</a>
       <a class="nav-link" href="#honors">Honors</a>
       <a class="nav-link" href="#contact">Contact</a>
@@ -716,6 +732,50 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
           </div>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Research & writing -->
+  <section class="block" id="research" aria-labelledby="res-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="res-h">Research and writing</h2>
+        <p>Reports, studies and papers, newest first. Each one opens as a PDF. Papers under review will appear here as they come out.</p>
+      </div>
+      <!-- To add a paper: copy one <li class="pub"> below, put it at the top, and set the year, title, authors, venue, link and kind
+           (kind: "Paper", "Under review", "In preparation" use class="kind wip", "Thesis" uses class="kind thesis"). -->
+      <ol class="pubs" reversed>
+        <li class="pub">
+          <span class="yr">2026</span>
+          <div><h3>Fish smoking in James Town: a baseline of kilns, fuel, smoke and costs</h3>
+            <p class="cite">Carbon Clarity, Nkabom Research Projects, Ashesi University. Working paper (working title), due December 2026.</p></div>
+          <span class="kind wip">In preparation</span>
+        </li>
+        <li class="pub">
+          <span class="yr">2026</span>
+          <div><h3><a href="docs/nkoranza-post-harvest-loss-report.pdf" target="_blank" rel="noopener">Post-harvest loss of cereal products in Nkoranza, Bono East Region, Ghana</a></h3>
+            <p class="cite">Biga, K., Amanu, N. F., Asnake, S. A., <b>Jal, P. C.</b>, Cyonandaro, L., Atudedam, A. C., Barkire, H. H. and Nibaruta, G. SOAN 320 group report, Ashesi University, August 2026. 13 pp.</p></div>
+          <span class="kind">Report</span>
+        </li>
+        <li class="pub">
+          <span class="yr">2026</span>
+          <div><h3><a href="docs/pout-chop-jal-capstone-thesis.pdf" target="_blank" rel="noopener">Exploring the experience of service quality and its influence on loyalty: a narrative inquiry of entrepreneurs in Berekuso, Ghana</a></h3>
+            <p class="cite"><b>Jal, P. C.</b> Undergraduate thesis, Department of Business Administration, Ashesi University, May 2026. Supervisor: Dr. Josephine Djan. 64 pp.</p></div>
+          <span class="kind thesis">Thesis</span>
+        </li>
+        <li class="pub">
+          <span class="yr">2026</span>
+          <div><h3><a href="docs/accra-flow-case-study.pdf" target="_blank" rel="noopener">Accra-Flow: a modular geospatial AI framework for paratransit optimization and urban resilience in the Greater Accra Metropolitan Area</a></h3>
+            <p class="cite">Twum, A. K., Songwae, C., Esua-Mensah, S. and <b>Jal, P. C.</b> Case study, Microsoft × Ashesi Future Builders AI Skilling Program, April 2026. Winner of the case competition.</p></div>
+          <span class="kind">Case study</span>
+        </li>
+        <li class="pub">
+          <span class="yr">2026</span>
+          <div><h3><a href="docs/carbon-clarity-iom-report.pdf" target="_blank" rel="noopener">Carbon Clarity: a transparency and accountability system for community carbon finance</a></h3>
+            <p class="cite">Team 7. Report prepared for IOM Mozambique, ALA &amp; IOM UN Migration Equity and Carbon Inclusion Hackathon, January 2026. First place. <a href="docs/carbon-clarity-full-report.pdf" target="_blank" rel="noopener">Full report, 106 pp</a></p></div>
+          <span class="kind">Report</span>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -1132,7 +1192,7 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
   const io = new IntersectionObserver(es => es.forEach(en => {
     if (en.isIntersecting) links.forEach(l => l.setAttribute('aria-current', String(l.getAttribute('href') === '#' + en.target.id)));
   }), { rootMargin: '-45% 0px -50% 0px' });
-  ['work','experience','honors','contact'].forEach(id => io.observe(document.getElementById(id)));
+  ['work','research','experience','honors','contact'].forEach(id => io.observe(document.getElementById(id)));
 })();
 </script>
 </body>
