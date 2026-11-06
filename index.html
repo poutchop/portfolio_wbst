@@ -308,6 +308,48 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .contact, :root:not([data-theme="light"]) .site-foot { background: #0A110E; color: var(--ink); } }
 :root[data-theme="dark"] .contact, :root[data-theme="dark"] .site-foot { background: #0A110E; color: var(--ink); }
 
+
+/* ---------- carbon credit receipt ---------- */
+.ledger-sec .sec-head p { max-width: 54ch; }
+.controls { display:flex; flex-wrap:wrap; gap: 1rem 2.5rem; align-items:end; margin-bottom: 1.8rem; }
+.ctl { display:grid; gap:.45rem; min-width: 0; }
+.ctl label { font-size: var(--step--1); color: var(--muted); }
+.ctl output { font-family: var(--serif); font-size: var(--step-2); line-height:1; font-variant-numeric: tabular-nums lining-nums; color: var(--ink); }
+.ctl-price { flex: 1 1 18rem; max-width: 28rem; }
+.ctl-price .row { display:flex; align-items:center; gap: 1rem; }
+.ctl-price input[type=range] { flex:1; min-width:0; accent-color: var(--canopy); height: 1.6rem; }
+.stepper { justify-self:start; display:inline-flex; align-items:center; border:1px solid var(--line); border-radius: 6px; overflow:hidden; background: var(--surface); }
+.stepper button { width:2.4rem; height:2.4rem; border:0; background:transparent; color:var(--ink); font: 600 1.1rem var(--sans); cursor:pointer; }
+.stepper button:hover { background: var(--canopy-tint); }
+.stepper output { min-width: 3.2rem; text-align:center; font-size: var(--step-1); }
+.receipts { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: clamp(1rem, 3vw, 2.5rem); align-items:start; }
+.receipt { position:relative; background: var(--surface); border: 1px solid var(--line); padding: 1.5rem 1.5rem 1.7rem; font-variant-numeric: tabular-nums; }
+.receipt::after { content:""; position:absolute; left:-1px; right:-1px; bottom:-9px; height:9px;
+  background: radial-gradient(circle at 7px -2px, transparent 7px, var(--surface) 7.5px) 0 0 / 14px 9px repeat-x; }
+.receipt header { display:flex; justify-content:space-between; gap:1rem; align-items:baseline; padding-bottom:.9rem; border-bottom: 1px dashed var(--line); }
+.receipt h3 { font-size: var(--step-1); }
+.receipt header span { font-size:.78rem; color: var(--muted); white-space:nowrap; }
+.lines { list-style:none; margin:0; padding: .6rem 0; }
+.lines li { display:flex; justify-content:space-between; gap: 1rem; padding: .45rem 0; font-size: var(--step--1); }
+.lines li span:first-child { color: var(--muted); }
+.lines li.hidden-line span:last-child { color: var(--muted); font-style: italic; }
+.lines li .sw { display:inline-block; width:.6rem; height:.6rem; border-radius:2px; margin-right:.5rem; vertical-align: .05em; }
+.total { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; padding-top: .9rem; border-top: 1px dashed var(--line); }
+.total span { font-size: var(--step--1); font-weight:600; }
+.total b { font-family: var(--serif); font-weight:500; font-size: var(--step-3); line-height:1; }
+.today .total b { color: var(--muted); }
+.clear .total b { color: var(--canopy); }
+.bar { display:flex; height: .8rem; border-radius: 3px; overflow:hidden; margin-top: 1.1rem; background: var(--line); }
+.bar i { display:block; height:100%; transition: width .35s ease; }
+@media (prefers-reduced-motion: reduce) { .bar i { transition: none; } }
+.c-hh { background: var(--canopy); } .c-fund { background: color-mix(in srgb, var(--canopy) 45%, var(--surface)); }
+.c-cost { background: var(--nile); } .c-margin { background: var(--ochre); } .c-unknown { background: var(--dot); }
+.receipt .note { font-size: .8rem; color: var(--muted); margin-top: .9rem; }
+.gap-line { margin-top: 2rem; font-family: var(--serif); font-size: var(--step-2); line-height: 1.3; max-width: 36ch; }
+.gap-line b { font-weight: 500; color: var(--canopy); font-variant-numeric: tabular-nums; }
+.ledger-src { font-size: .8rem; color: var(--muted); margin-top: 1rem; max-width: 70ch; }
+.ledger-src a { color: inherit; }
+
 /* ---------- responsive ---------- */
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: minmax(0,1fr); }
@@ -323,6 +365,7 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
   .exp-grid, .contact-grid { grid-template-columns: minmax(0,1fr); }
 }
 @media (max-width: 640px) {
+  .receipts { grid-template-columns: minmax(0,1fr); gap: 1.8rem; }
   .sec-head { grid-template-columns: minmax(0,1fr); }
   .proof { grid-template-columns: minmax(0,1fr); gap: 1rem; }
   .proof li { display:flex; align-items: baseline; gap: .9rem; }
@@ -377,6 +420,7 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
         <div class="actions">
           <a class="btn btn-solid" href="#work">See the work</a>
           <a class="btn btn-line" href="#contact">Get in touch</a>
+          <a class="btn btn-line" href="docs/pout-chop-jal-cv.pdf" target="_blank" rel="noopener">CV (PDF, 1 page)</a>
         </div>
         <ul class="proof">
           <li class="o"><b>2</b><span>competition wins in 2026, with IOM Mozambique and Ashesi × Microsoft</span></li>
@@ -414,6 +458,56 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
           <div><dt>Languages</dt><dd>English, Arabic, Nuer</dd></div>
         </dl>
       </div>
+    </div>
+  </section>
+
+  <!-- Carbon credit receipt -->
+  <section class="block ledger-sec" id="receipt" aria-labelledby="rec-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="rec-h">Follow the money from one household's carbon credits</h2>
+        <p>Families who switch to cleaner cookstoves generate carbon credits, but they rarely see what those credits sell for. Change the price and see how much reaches them today, and how much would reach them under the formula Carbon Clarity proposed to IOM Mozambique.</p>
+      </div>
+      <div class="controls">
+        <div class="ctl ctl-price">
+          <label for="price">Market price per credit</label>
+          <div class="row"><input id="price" type="range" min="4" max="30" step="1" value="12" aria-describedby="price-out"><output id="price-out" for="price">$12</output></div>
+        </div>
+        <div class="ctl">
+          <label id="cr-l">Credits this household earns in a year</label>
+          <div class="stepper" role="group" aria-labelledby="cr-l">
+            <button type="button" id="cr-minus" aria-label="Fewer credits">−</button>
+            <output id="cr-out" aria-live="polite">2</output>
+            <button type="button" id="cr-plus" aria-label="More credits">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="receipts">
+        <article class="receipt today" aria-labelledby="r1">
+          <header><h3 id="r1">How it often works today</h3><span>No receipt given</span></header>
+          <ul class="lines">
+            <li><span>Value of your credits</span><span data-v="value">$24.00</span></li>
+            <li class="hidden-line"><span><i class="sw c-unknown"></i>Costs, fees and margin</span><span>Not disclosed</span></li>
+          </ul>
+          <div class="total"><span>You receive</span><b data-v="today">$3.00</b></div>
+          <div class="bar" aria-hidden="true"><i class="c-hh" data-w="today"></i><i class="c-unknown" data-w="todayRest"></i></div>
+          <p class="note">The household can't check the price, the deductions or whether the amount is fair. In IOM's 2024 pilot, nothing was paid at all.</p>
+        </article>
+        <article class="receipt clear" aria-labelledby="r2">
+          <header><h3 id="r2">With Carbon Clarity</h3><span>Itemized receipt</span></header>
+          <ul class="lines">
+            <li><span>Value of your credits</span><span data-v="value">$24.00</span></li>
+            <li><span><i class="sw c-cost"></i>Verified costs (15%)</span><span data-v="cost">−$3.60</span></li>
+            <li><span><i class="sw c-margin"></i>Developer margin, capped (5%)</span><span data-v="margin">−$1.20</span></li>
+            <li><span><i class="sw c-fund"></i>Community fund (20%)</span><span data-v="fund">−$4.80</span></li>
+          </ul>
+          <div class="total"><span>You receive (60%)</span><b data-v="clear">$14.40</b></div>
+          <div class="bar" aria-hidden="true"><i class="c-hh" data-w="hh"></i><i class="c-fund" data-w="fundw"></i><i class="c-cost" data-w="costw"></i><i class="c-margin" data-w="marginw"></i></div>
+          <p class="note">Every line is printed on the receipt and posted on the village price board. Carbon Clarity's own fee is paid by the developer, never taken from households.</p>
+        </article>
+      </div>
+      <p class="gap-line" id="gap-line" aria-live="polite">That's <b data-v="gap">$11.40</b> more a year for this family, plus <b data-v="fund2">$4.80</b> for the community fund.</p>
+      <p class="ledger-src">Formula from Carbon Clarity's <a href="docs/carbon-clarity-full-report.pdf" target="_blank" rel="noopener">final report</a> (from each $10: $1.50 verified costs, $0.50 capped margin, $6 to the household, $2 to the community fund). "Today" follows the report's example of a household receiving $3 from $24 of credits. Illustrative; real shares are agreed with each community.</p>
     </div>
   </section>
 
@@ -870,6 +964,7 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
           <li><span class="label">LinkedIn</span><span class="val"><a href="https://www.linkedin.com/in/pout-chop-jal" target="_blank" rel="noopener">linkedin.com/in/pout-chop-jal</a></span></li>
           <li><span class="label">Phone</span><span class="val"><a href="tel:+233594303507">+233 59 430 3507</a><button class="copy" type="button" data-copy="+233594303507">Copy</button></span></li>
           <li><span class="label">Location</span><span class="val">Accra, Ghana (GMT)</span></li>
+          <li><span class="label">CV</span><span class="val"><a href="docs/pout-chop-jal-cv.pdf" target="_blank" rel="noopener">One page, PDF</a></span></li>
         </ul>
       </div>
       <form class="msg" id="msg-form" novalidate>
@@ -963,6 +1058,29 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
     chips.forEach(c => c.setAttribute('aria-pressed', String(c === ch)));
     items.forEach(it => { it.hidden = !(f === 'all' || it.dataset.areas.split(' ').includes(f)); });
   }));
+
+  /* ---------- carbon credit receipt ---------- */
+  (() => {
+    const price = document.getElementById('price'), pOut = document.getElementById('price-out');
+    const crOut = document.getElementById('cr-out'); let credits = 2;
+    const fmt = n => '$' + n.toFixed(2);
+    const set = (k, t) => document.querySelectorAll('[data-v="' + k + '"]').forEach(e => e.textContent = t);
+    const w = (k, pct) => document.querySelectorAll('[data-w="' + k + '"]').forEach(e => e.style.width = pct + '%');
+    const render = () => {
+      const p = +price.value, value = p * credits;
+      pOut.textContent = '$' + p; crOut.textContent = credits;
+      price.setAttribute('aria-valuetext', '$' + p + ' per credit');
+      const today = value * 0.125, cost = value * 0.15, margin = value * 0.05, fund = value * 0.20, hh = value * 0.60;
+      set('value', fmt(value)); set('today', fmt(today));
+      set('cost', '−' + fmt(cost)); set('margin', '−' + fmt(margin)); set('fund', '−' + fmt(fund));
+      set('clear', fmt(hh)); set('gap', fmt(hh - today)); set('fund2', fmt(fund));
+      w('today', 12.5); w('todayRest', 87.5); w('hh', 60); w('fundw', 20); w('costw', 15); w('marginw', 5);
+    };
+    price.addEventListener('input', render);
+    document.getElementById('cr-minus').addEventListener('click', () => { credits = Math.max(1, credits - 1); render(); });
+    document.getElementById('cr-plus').addEventListener('click', () => { credits = Math.min(10, credits + 1); render(); });
+    render();
+  })();
 
   /* ---------- copy buttons ---------- */
   document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', async () => {
