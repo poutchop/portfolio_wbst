@@ -1,1029 +1,960 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Pout Chop Jal | Strategy, Climate Finance & Policy Research</title>
-  <meta content="Personal portfolio of Pout Chop Jal - Founder of Carbon Clarity, Business Administration Graduate at Ashesi University, and Data & Policy Research Lead specializing in climate finance and compliance risk modeling." name="description">
-  <meta content="Pout Chop Jal, Carbon Clarity, Ashesi University, Climate Finance, Data Analytics, Policy Research, Africa Carbon Markets, ESG Compliance" name="keywords">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Pout Chop Jal is a climate finance and policy researcher in Accra, founder of Carbon Clarity and a Mastercard Foundation Scholar at Ashesi University.">
+<meta name="theme-color" content="#F2F4F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1814" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://my-portfolio-pout-chop.vercel.app/">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Pout Chop Jal: strategy, climate finance and policy research">
+<meta property="og:description" content="Pout Chop Jal is a climate finance and policy researcher in Accra, founder of Carbon Clarity and a Mastercard Foundation Scholar at Ashesi University.">
+<meta property="og:url" content="https://my-portfolio-pout-chop.vercel.app/">
+<meta property="og:image" content="https://my-portfolio-pout-chop.vercel.app/img/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Pout Chop Jal","url":"https://my-portfolio-pout-chop.vercel.app/","image":"https://my-portfolio-pout-chop.vercel.app/img/pout-chop-jal.jpg","jobTitle":"Founder, Carbon Clarity","alumniOf":"Ashesi University","address":{"@type":"PostalAddress","addressLocality":"Accra","addressCountry":"GH"},"sameAs":["https://www.linkedin.com/in/pout-chop-jal"]}</script>
+<title>Pout Chop Jal | Strategy, Climate Finance & Policy Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+/* Layout: one reading column on a 12-col grid; the hero pairs the thesis with a dot map of Africa that marks where the work happened.
+   Color: each of the three work pillars owns a hue (canopy = climate, nile = policy, ochre = product) and that hue follows it everywhere. */
+:root {
+  --paper:   #F2F4F0;   /* cool sage-white ground */
+  --surface: #FBFCFA;
+  --ink:     #14231E;   /* deep forest ink */
+  --muted:   #52625C;
+  --line:    #D3DBD5;
+  --dot:     #C3CEC7;   /* map land dots */
+  --canopy:  #1C6A4F;   /* climate & ventures */
+  --nile:    #2B5A79;   /* policy & research */
+  --ochre:   #8E5F12;   /* product & design, honors */
+  --canopy-tint: #DCEBE3;
+  --nile-tint:   #DCE6EE;
+  --ochre-tint:  #F0E5D2;
+  --focus:   #2B5A79;
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  --serif: "Spectral", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans:  "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  --step--1: clamp(0.84rem, 0.82rem + 0.1vw, 0.9rem);
+  --step-0:  clamp(1rem, 0.97rem + 0.15vw, 1.08rem);
+  --step-1:  clamp(1.2rem, 1.12rem + 0.4vw, 1.4rem);
+  --step-2:  clamp(1.5rem, 1.3rem + 0.9vw, 2rem);
+  --step-3:  clamp(2rem, 1.6rem + 1.9vw, 3rem);
+  --step-4:  clamp(2.7rem, 1.9rem + 3.8vw, 5rem);
+  --wrap: 72rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:#0F1814; --surface:#15211C; --ink:#E4EBE7; --muted:#9AADA5; --line:#25352E; --dot:#2C3E36;
+    --canopy:#6CC39C; --nile:#86B6D8; --ochre:#D8A851;
+    --canopy-tint:#17332A; --nile-tint:#182B38; --ochre-tint:#33280F; --focus:#86B6D8;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:#0F1814; --surface:#15211C; --ink:#E4EBE7; --muted:#9AADA5; --line:#25352E; --dot:#2C3E36;
+  --canopy:#6CC39C; --nile:#86B6D8; --ochre:#D8A851;
+  --canopy-tint:#17332A; --nile-tint:#182B38; --ochre-tint:#33280F; --focus:#86B6D8;
+  color-scheme: dark;
+}
 
-  <!-- Vendor CSS Files -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="vendor/aos/aos.css" rel="stylesheet">
-  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--sans); font-size: var(--step-0); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:30; background:var(--paper); }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.12; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+p { margin: 0; }
+.wrap {
+  max-width: var(--wrap); margin-inline: auto;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+.skip { position:absolute; left:-999px; top:0; }
+.skip:focus { left: 1rem; top: 1rem; z-index: 50; background: var(--surface); padding: .5rem .8rem; }
 
-  <!-- Main CSS File -->
-  <link href="css/main.css" rel="stylesheet">
+/* ---------- header ---------- */
+.site-head {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.site-head .wrap { display:flex; align-items:center; justify-content:space-between; gap:1rem; min-height:3.75rem; }
+.brand { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.nav { display:flex; align-items:center; gap: clamp(.8rem, 2vw, 1.8rem); font-size: var(--step--1); }
+.nav a { text-decoration: none; color: var(--muted); }
+.nav a:hover, .nav a[aria-current="true"] { color: var(--ink); }
+.theme-btn {
+  background: none; border: 1px solid var(--line); color: var(--ink); border-radius: 999px;
+  width: 2.1rem; height: 2.1rem; display:grid; place-items:center; cursor:pointer;
+}
+.theme-btn svg { width: 1rem; height: 1rem; }
+@media (max-width: 720px) { .nav .nav-link { display: none; } }
+
+/* ---------- hero ---------- */
+.hero { padding-block: clamp(2.5rem, 6vw, 5rem) clamp(2rem, 4vw, 3.5rem); }
+.hero-grid { display:grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.status { display:inline-flex; align-items:center; gap:.55rem; font-size: var(--step--1); color: var(--muted); margin-bottom: 1.6rem; }
+.status i { width:.55rem; height:.55rem; border-radius:50%; background: var(--canopy); box-shadow: 0 0 0 4px var(--canopy-tint); }
+.hero h1 { font-size: var(--step-4); font-weight: 500; letter-spacing: -0.02em; }
+.hero .roles { font-family: var(--serif); font-style: italic; font-size: var(--step-1); color: var(--muted); margin-top: .6rem; }
+.hero .thesis { font-size: var(--step-1); line-height: 1.5; margin-top: 1.6rem; max-width: 34ch; }
+.actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top: 2rem; }
+.btn {
+  display:inline-flex; align-items:center; gap:.5rem; padding:.78rem 1.3rem; border-radius: 6px;
+  font: 600 var(--step--1)/1 var(--sans); text-decoration:none; border:1px solid var(--ink); cursor:pointer;
+}
+.btn-solid { background: var(--ink); color: var(--paper); }
+.btn-solid:hover { background: var(--canopy); border-color: var(--canopy); }
+.btn-line { background: transparent; color: var(--ink); }
+.btn-line:hover { background: var(--surface); }
+
+.proof { list-style:none; margin: 2.6rem 0 0; padding: 1.4rem 0 0; border-top: 1px solid var(--line);
+  display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.2rem; }
+.proof b { display:block; font-family: var(--serif); font-size: var(--step-2); font-weight: 500; line-height: 1; font-variant-numeric: lining-nums; }
+.proof span { display:block; font-size: var(--step--1); color: var(--muted); margin-top: .45rem; line-height: 1.4; }
+.proof .c b { color: var(--canopy); } .proof .n b { color: var(--nile); } .proof .o b { color: var(--ochre); }
+
+/* the map */
+.map-fig { margin: 0; position: relative; }
+.map-fig svg { width: 100%; height: auto; display:block; overflow: visible; }
+.map-fig figcaption { font-size: var(--step--1); color: var(--muted); margin-top: .6rem; max-width: 42ch; }
+.land { fill: var(--dot); }
+.land.lit { fill: var(--muted); }
+@media (prefers-reduced-motion: no-preference) {
+  .land { animation: rise .7s ease-out both; animation-delay: var(--d, 0s); }
+  @keyframes rise { from { opacity: .15; transform: scale(.4); } to { opacity: 1; transform: none; } }
+  .land { transform-box: fill-box; transform-origin: center; }
+  .route { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 1.6s .9s ease-out forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+}
+.route { fill:none; stroke: var(--ochre); stroke-width: 2; stroke-linecap: round; }
+.pin circle.core { stroke: var(--paper); stroke-width: 3; }
+.pin circle.halo { opacity: .22; }
+.pin text { font: 600 21px var(--sans); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 4px; stroke-linejoin: round; }
+.pin text.sub { font-weight: 400; font-size: 17px; fill: var(--muted); }
+.pin.c .core, .pin.c .halo { fill: var(--canopy); }
+.pin.n .core, .pin.n .halo { fill: var(--nile); }
+.pin.o .core, .pin.o .halo { fill: var(--ochre); }
+
+/* ---------- sections ---------- */
+section.block { padding-block: clamp(3.5rem, 8vw, 6.5rem); border-top: 1px solid var(--line); }
+.sec-head { display:grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 1rem 3rem; align-items: end; margin-bottom: clamp(2rem, 4vw, 3.2rem); }
+.sec-head h2 { font-size: var(--step-3); }
+.sec-head p { color: var(--muted); max-width: 52ch; }
+
+/* about */
+.about-grid { display:grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr) minmax(0, 17rem); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
+.portrait { border-radius: 4px; aspect-ratio: 4/5; object-fit: cover; object-position: 50% 30%; width: 100%; height: auto; filter: saturate(.92); }
+.about-text p + p { margin-top: 1rem; }
+.about-text p:first-child { font-family: var(--serif); font-size: var(--step-2); line-height: 1.32; }
+.facts { margin: 0; display:grid; gap: .9rem; font-size: var(--step--1); }
+.facts div { display:grid; gap:.1rem; padding-bottom:.9rem; border-bottom: 1px solid var(--line); }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; font-weight: 500; }
+
+/* work */
+.filters { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom: 1.6rem; }
+.chip {
+  font: 500 var(--step--1)/1 var(--sans); padding:.6rem .95rem; border-radius: 999px; cursor:pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--ink); display:inline-flex; gap:.5rem; align-items:center;
+}
+.chip i { width:.6rem; height:.6rem; border-radius:50%; background: var(--k, var(--ink)); }
+.chip small { color: var(--muted); font-size: .85em; font-variant-numeric: tabular-nums; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chip[aria-pressed="true"] small { color: inherit; opacity: .7; }
+.k-c { --k: var(--canopy); --kt: var(--canopy-tint); }
+.k-n { --k: var(--nile);   --kt: var(--nile-tint); }
+.k-o { --k: var(--ochre);  --kt: var(--ochre-tint); }
+
+.projects { list-style:none; margin:0; padding:0; border-top: 1px solid var(--line); }
+.project {
+  display:grid; grid-template-columns: minmax(0, 11rem) minmax(0, 1fr) minmax(0, 15rem);
+  gap: 1rem clamp(1.5rem, 4vw, 3rem); padding-block: 2rem; border-bottom: 1px solid var(--line);
+}
+.project[hidden] { display: none !important; }
+.figure { color: var(--k); }
+.figure b { display:block; font-family: var(--serif); font-weight: 500; font-size: var(--step-4); line-height: .95; letter-spacing: -0.02em; font-variant-numeric: lining-nums; }
+.figure span { display:block; font-size: var(--step--1); color: var(--muted); margin-top: .5rem; line-height: 1.35; max-width: 16ch; }
+.project h3 { font-size: var(--step-2); }
+.tags { display:flex; flex-wrap:wrap; gap:.4rem; margin: .7rem 0 .9rem; }
+.tag { font-size: .78rem; font-weight: 600; padding: .25rem .55rem; border-radius: 3px; background: var(--kt); color: var(--k); }
+.project .body p { max-width: 60ch; }
+.project .did { margin: .9rem 0 0; padding-left: 1.1rem; color: var(--muted); font-size: var(--step--1); max-width: 62ch; }
+.project .did li + li { margin-top: .35rem; }
+.shots { display:grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); gap:.5rem; margin: 1.1rem 0 .2rem; max-width: 40rem; aspect-ratio: 2.4 / 1; }
+.shots img { width:100%; height:100%; object-fit:cover; border-radius: 3px; }
+.shots img:first-child { grid-row: 1 / span 2; }
+.project .meta { font-size: var(--step--1); color: var(--muted); display:grid; gap:.8rem; align-content:start; }
+.project .meta strong { display:block; color: var(--ink); font-weight: 600; }
+.project .meta a { color: var(--k); font-weight: 600; }
+
+/* capabilities */
+.caps { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); }
+.cap { padding: 1.6rem 1.6rem 1.8rem 0; border-bottom: 1px solid var(--line); }
+.cap:not(:nth-child(3n+1)) { padding-left: 1.6rem; border-left: 1px solid var(--line); }
+.cap h3 { font-size: var(--step-1); font-weight: 600; }
+.cap p { color: var(--muted); font-size: var(--step--1); margin-top: .5rem; }
+.cap .ev { margin-top: .9rem; font-size: .8rem; color: var(--ink); }
+.cap .ev em { font-style: normal; color: var(--muted); }
+
+/* experience */
+.exp-grid { display:grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4.5rem); }
+.exp-grid h3.col { font-family: var(--sans); font-size: var(--step--1); font-weight: 600; color: var(--muted); margin-bottom: .4rem; letter-spacing: .01em; }
+.timeline { list-style:none; margin:0; padding:0; }
+.timeline > li { display:grid; grid-template-columns: minmax(0, 8.5rem) minmax(0, 1fr); gap: .3rem 1.4rem; padding-block: 1.4rem; border-top: 1px solid var(--line); }
+.when { font-size: var(--step--1); color: var(--muted); font-variant-numeric: tabular-nums; padding-top: .25rem; }
+.when .now { display:inline-block; margin-top:.35rem; font-size:.75rem; font-weight:600; color: var(--canopy); }
+.timeline h4 { margin:0; font-family: var(--serif); font-size: var(--step-1); font-weight: 600; line-height: 1.25; }
+.timeline .org { color: var(--muted); font-size: var(--step--1); margin-top: .15rem; }
+.timeline ul { margin: .7rem 0 0; padding-left: 1.1rem; font-size: var(--step--1); }
+.timeline ul li + li { margin-top: .35rem; }
+.certs { list-style:none; margin:0; padding:0; font-size: var(--step--1); }
+.certs li { display:grid; gap:.1rem; padding-block:.7rem; border-top:1px solid var(--line); }
+.certs li span { font-weight: 600; }
+.certs li small { color: var(--muted); font-size: inherit; }
+
+/* honors */
+.honors-grid { display:grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.trophy { margin:0; }
+.trophy img { border-radius: 4px; aspect-ratio: 4/5; object-fit: cover; width: 100%; height: auto; }
+.trophy figcaption { font-size: var(--step--1); color: var(--muted); margin-top: .6rem; }
+.honors { list-style:none; margin:0; padding:0; }
+.honors li { display:grid; grid-template-columns: minmax(0, 6.5rem) minmax(0, 1fr); gap: .2rem 1.4rem; padding-block: 1.3rem; border-top: 1px solid var(--line); }
+.honors li:last-child { border-bottom: 1px solid var(--line); }
+.honors time, .honors .time { font-size: var(--step--1); color: var(--ochre); font-weight: 600; font-variant-numeric: tabular-nums; padding-top: .2rem; }
+.honors h3 { font-size: var(--step-1); font-weight: 600; }
+.honors .where { font-size: var(--step--1); color: var(--muted); margin-top: .15rem; }
+.honors p.desc { font-size: var(--step--1); margin-top: .5rem; max-width: 58ch; }
+.honors p.desc a { color: var(--ochre); font-weight: 600; white-space: nowrap; }
+.with-badge { display:grid; grid-template-columns: minmax(0,1fr) auto; gap: 1rem; align-items: center; }
+.badge { width: 5.5rem; height: auto; }
+.clip { margin: 1rem 0 0; max-width: 26rem; }
+.clip video { width: 100%; height: auto; display:block; border-radius: 4px; background: var(--ink); }
+.clip figcaption { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
+.gallery { display:grid; grid-template-columns: minmax(0,1.7fr) minmax(0,1fr) minmax(0,1fr); grid-template-rows: repeat(2, clamp(9rem, 17vw, 15rem)); gap: .75rem; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.gallery figure { margin: 0; position: relative; overflow: hidden; border-radius: 4px; background: var(--line); }
+.gallery img { width: 100%; height: 100%; object-fit: cover; }
+.gallery figcaption { position:absolute; left:0; right:0; bottom:0; padding: 1.6rem .8rem .6rem; font-size: .8rem; color: #fff; background: linear-gradient(transparent, rgba(8,16,12,.72)); }
+.g-a { grid-column: 1; grid-row: 1; } .g-d { grid-column: 1; grid-row: 2; }
+.g-b { grid-column: 2; grid-row: 1 / span 2; } .g-c { grid-column: 3; grid-row: 1 / span 2; }
+.g-d img { object-position: 50% 35%; } .g-b img { object-position: 50% 20%; }
+
+/* endorsements */
+.quotes { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: clamp(1.5rem, 3vw, 2.5rem); }
+.quote { margin: 0; display:flex; flex-direction:column; gap: 1.4rem; }
+.quote blockquote { margin: 0; font-family: var(--serif); font-size: var(--step-1); line-height: 1.45; }
+.quote blockquote::before { content: "\201C"; display:block; font-size: 3rem; line-height: .6; color: var(--canopy); margin-bottom: .6rem; }
+.quote figcaption { display:flex; align-items:center; gap: .8rem; margin-top: auto; font-size: var(--step--1); }
+.quote figcaption img { width: 2.75rem; height: 2.75rem; border-radius: 50%; object-fit: cover; }
+.quote figcaption strong { display:block; }
+.quote figcaption span { color: var(--muted); }
+
+/* contact */
+.contact { background: var(--ink); color: var(--paper); border-top: 0; }
+.contact .sec-head p, .contact .label { color: color-mix(in srgb, var(--paper) 72%, var(--ink)); }
+.contact-grid { display:grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4.5rem); }
+.contact h2 { font-size: var(--step-4); letter-spacing: -0.02em; }
+.channels { list-style:none; margin: 2rem 0 0; padding: 0; display:grid; gap: 1.1rem; }
+.channels li { display:grid; gap:.15rem; }
+.label { font-size: var(--step--1); }
+.channels .val { display:flex; align-items:center; flex-wrap: wrap; gap:.6rem; font-size: var(--step-1); font-family: var(--serif); }
+.channels a { text-decoration-color: color-mix(in srgb, var(--paper) 40%, transparent); }
+.copy {
+  font: 500 .78rem/1 var(--sans); padding:.4rem .6rem; border-radius: 4px; cursor:pointer;
+  background: transparent; color: var(--paper); border: 1px solid color-mix(in srgb, var(--paper) 35%, transparent);
+}
+form.msg { display:grid; gap: 1rem; align-content: start; }
+.field { display:grid; gap: .35rem; }
+.field label { font-size: var(--step--1); color: color-mix(in srgb, var(--paper) 78%, var(--ink)); }
+.field input, .field textarea, .field select {
+  font: inherit; color: var(--paper); background: color-mix(in srgb, var(--paper) 7%, var(--ink));
+  border: 1px solid color-mix(in srgb, var(--paper) 22%, var(--ink)); border-radius: 5px; padding: .75rem .85rem; width: 100%;
+}
+.field textarea { min-height: 8rem; resize: vertical; }
+.field input:focus, .field textarea:focus, .field select:focus { outline: 2px solid var(--canopy); outline-offset: 1px; }
+.row2 { display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.contact .btn-solid { background: var(--paper); color: var(--ink); border-color: var(--paper); justify-self: start; }
+.contact .btn-solid:hover { background: var(--canopy-tint); }
+.form-note { font-size: var(--step--1); color: color-mix(in srgb, var(--paper) 72%, var(--ink)); min-height: 1.4em; }
+.contact :focus-visible { outline-color: var(--paper); }
+
+.site-foot { background: var(--ink); color: color-mix(in srgb, var(--paper) 65%, var(--ink)); font-size: var(--step--1); }
+.site-foot .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap: .5rem 2rem; padding-block: 1.6rem calc(1.6rem + env(safe-area-inset-bottom,0px)); border-top: 1px solid color-mix(in srgb, var(--paper) 14%, var(--ink)); }
+
+/* dark-theme tweak: contact band stays dark but lifts off the page */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .contact, :root:not([data-theme="light"]) .site-foot { background: #0A110E; color: var(--ink); } }
+:root[data-theme="dark"] .contact, :root[data-theme="dark"] .site-foot { background: #0A110E; color: var(--ink); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: minmax(0,1fr); }
+  .map-fig { max-width: 30rem; }
+  .about-grid { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); }
+  .about-grid .facts { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 2rem; }
+  .project { grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); }
+  .project .meta { grid-column: 2; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .caps { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .cap:not(:nth-child(3n+1)) { padding-left: 0; border-left: 0; }
+  .cap:nth-child(even) { padding-left: 1.6rem; border-left: 1px solid var(--line); }
+  .quotes { grid-template-columns: minmax(0,1fr); max-width: 44rem; }
+  .exp-grid, .contact-grid { grid-template-columns: minmax(0,1fr); }
+}
+@media (max-width: 640px) {
+  .sec-head { grid-template-columns: minmax(0,1fr); }
+  .proof { grid-template-columns: minmax(0,1fr); gap: 1rem; }
+  .proof li { display:flex; align-items: baseline; gap: .9rem; }
+  .proof b { min-width: 3.6rem; }
+  .proof span { margin-top: 0; }
+  .about-grid { grid-template-columns: minmax(0,1fr); }
+  .portrait { max-width: 14rem; }
+  .about-grid .facts { grid-template-columns: minmax(0,1fr); }
+  .project { grid-template-columns: minmax(0,1fr); }
+  .project .meta { grid-column: auto; grid-template-columns: minmax(0,1fr); }
+  .figure { display:flex; align-items:baseline; gap: .8rem; }
+  .figure b { font-size: var(--step-3); }
+  .figure span { margin-top: 0; }
+  .caps { grid-template-columns: minmax(0,1fr); }
+  .cap:nth-child(even) { padding-left: 0; border-left: 0; }
+  .timeline > li, .honors li { grid-template-columns: minmax(0,1fr); }
+  .honors-grid { grid-template-columns: minmax(0,1fr); }
+  .trophy { max-width: 18rem; }
+  .gallery { grid-template-columns: minmax(0,1fr) minmax(0,1fr); grid-template-rows: 13rem 16rem 13rem; }
+  .g-a { grid-column: 1 / -1; grid-row: 1; } .g-b { grid-column: 1; grid-row: 2; } .g-c { grid-column: 2; grid-row: 2; } .g-d { grid-column: 1 / -1; grid-row: 3; }
+  .row2 { grid-template-columns: minmax(0,1fr); }
+}
+</style>
 </head>
-
-<body class="index-page">
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="img/my-profile-img.jpg" alt="Pout Chop Jal" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Pout Chop Jal</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="https://linkedin.com/in/pout-chop-jal" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:poutchopj@gmail.com" class="email"><i class="bi bi-envelope-fill"></i></a>
-      <a href="tel:+233594303507" class="phone"><i class="bi bi-telephone-fill"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#stats"><i class="bi bi-graph-up-arrow navicon"></i><span>Impact Metrics</span></a></li>
-        <li><a href="#skills"><i class="bi bi-bar-chart-steps navicon"></i><span>Skills</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Experience & Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-grid-1x2 navicon"></i><span>Projects & Portfolio</span></a></li>
-        <li><a href="#leadership"><i class="bi bi-award navicon"></i><span>Leadership & Honors</span></a></li>
-        <li><a href="#testimonials"><i class="bi bi-chat-square-quote navicon"></i><span>Endorsements</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top">Pout Chop Jal</a>
+    <nav class="nav" aria-label="Sections">
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#honors">Honors</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch to dark theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/></svg>
+      </button>
     </nav>
-  </header>
-
-  <main class="main">
-
-   <!-- ======= Hero Slider Section ======= -->
-<section id="hero" class="hero-slider-section">
-
-  <!-- Background Image Slides -->
-  <div class="hero-slides-wrapper">
-    <div class="hero-slide active" style="background-image: url('img/hero-bg.jpg');"></div>
-    <div class="hero-slide" style="background-image: url('img/portfolio/award-e.jpeg');"></div>
-    <div class="hero-slide" style="background-image: url('img/portfolio/transit-study.jpg');"></div>
   </div>
+</header>
 
-  <!-- Hero Content Overlay -->
-  <div class="container hero-content-overlay" data-aos="fade-up" data-aos-delay="100">
-    <h2>Pout Chop Jal</h2>
-    <p>I am a <span class="typed" data-typed-items="Founder of Carbon Clarity, Climate Finance Researcher, Data & Policy Lead, Mastercard Foundation Scholar, Business Administration Graduate"></span></p>
-    <div class="hero-actions mt-4 d-flex gap-3">
-      <a href="#portfolio" class="btn btn-primary px-4 py-2 rounded-pill shadow">Explore Work</a>
-      <a href="#contact" class="btn btn-outline-light px-4 py-2 rounded-pill">Get in Touch</a>
-    </div>
-  </div>
-
-</section>
-    
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Executive Profile</h2>
-        <p>Bridging commercial strategy, climate-tech innovation, and regulatory policy analysis across emerging markets.</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center align-items-center">
-          <div class="col-lg-4 text-center">
-            <img src="img/my-profile-img.jpg" class="img-fluid rounded-4 shadow" alt="Pout Chop Jal Portrait">
-          </div>
-          <div class="col-lg-8 content">
-            <h3 class="fw-bold">Venture Builder, Policy Researcher &amp; Finance Strategist</h3>
-            <p class="fst-italic text-muted py-2">
-              Founder of Carbon Clarity and Ashesi University Business Administration graduate with a proven record in converting complex field research and policy gaps into institutionally backed ventures.
-            </p>
-
-            <div class="row my-3">
-              <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary"></i> <strong>Location:</strong> <span>Accra, Ghana</span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary"></i> <strong>Focus Areas:</strong> <span>Climate Finance, Policy &amp; Valuation</span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary"></i> <strong>Email:</strong> <span><a href="mailto:poutchopj@gmail.com">poutchopj@gmail.com</a></span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary"></i> <strong>Phone:</strong> <span><a href="tel:+233594303507">+233 594 303 507</a></span></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary"></i> <strong>Degree:</strong> <span>BSc. Business Administration</span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary"></i> <strong>Institution:</strong> <span>Ashesi University</span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary"></i> <strong>Scholarship:</strong> <span>Mastercard Foundation Scholar</span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary"></i> <strong>Languages:</strong> <span>English, Arabic, Nuer</span></li>
-                </ul>
-              </div>
-            </div>
-
-            <p>
-              Experienced in structuring compliance risk models, stakeholder alignment across global institutions (Global Affairs Canada, Catalyste+, Microsoft), and leading cross-functional data initiatives from inception to execution.
-            </p>
-          </div>
+<main id="main">
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="status"><i aria-hidden="true"></i>Open to roles in strategy, climate finance and policy research</p>
+        <h1>Pout Chop Jal</h1>
+        <p class="roles">Founder of Carbon Clarity, policy researcher and Mastercard Foundation Scholar</p>
+        <p class="thesis">I turn field research and policy gaps into ventures and tools that move climate finance and mobility forward across Africa.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="#work">See the work</a>
+          <a class="btn btn-line" href="#contact">Get in touch</a>
         </div>
-      </div>
-    </section>
-
-    <!-- ======= Stats Section ======= -->
-    <section id="stats" class="stats section light-background py-5">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 text-center">
-          <div class="col-lg-3 col-md-6">
-            <div class="p-4 bg-white rounded shadow-sm">
-              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter display-5 fw-bold text-primary">1</span>
-              <p class="text-muted mt-2 mb-0">Climate Venture Built</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="p-4 bg-white rounded shadow-sm">
-              <span data-purecounter-start="0" data-purecounter-end="54" data-purecounter-duration="1" class="purecounter display-5 fw-bold text-primary">54</span>
-              <p class="text-muted mt-2 mb-0">African Country Datasets Audited</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="p-4 bg-white rounded shadow-sm">
-              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter display-5 fw-bold text-primary">4</span>
-              <p class="text-muted mt-2 mb-0">Major Innovation & Impact Awards</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="p-4 bg-white rounded shadow-sm">
-              <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1" class="purecounter display-5 fw-bold text-primary">40</span><span>%</span>
-              <p class="text-muted mt-2 mb-0">Efficiency Gain in Transit Index</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Core Competencies</h2>
-        <p>Strategic blend of financial modeling, risk analysis, and stakeholder governance.</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row skills-content">
-          <div class="col-lg-6">
-            <div class="progress mb-4">
-              <span class="skill">Compliance & Regulatory Risk Research <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress mb-4">
-              <span class="skill">Commercial Strategy & Valuation Modeling <i class="val">88%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress mb-4">
-              <span class="skill">Quantitative & Qualitative Field Research <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="progress mb-4">
-              <span class="skill">Policy Analysis & Econometric Datasets <i class="val">86%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress mb-4">
-              <span class="skill">Stakeholder Management & Cross-Border Partnerships <i class="val">94%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 94%;" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress mb-4">
-              <span class="skill">Product Prototyping & UI/UX Data Tools <i class="val">82%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Resume & Experience Section ======= -->
-    <section id="resume" class="resume section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Professional Track Record</h2>
-        <p>Proven execution across climate innovation, corporate research, and policy analysis.</p>
-      </div>
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>BSc. in Business Administration</h4>
-              <h5>2022 - 2026</h5>
-              <p><em>Ashesi University, Berekuso / Accra, Ghana</em></p>
-              <ul>
-                <li>Mastercard Foundation Full Scholar.</li>
-                <li>Relevant Coursework: Corporate Finance, Competitive Strategy, Managerial Accounting, Strategic Marketing.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Certificate of Secondary Education</h4>
-              <h5>Graduated Dec 2019</h5>
-              <p><em>Equity High School, Juba, South Sudan</em></p>
-              <p>Graduated with distinction; student leadership lead.</p>
-            </div>
-
-            <h3 class="resume-title">Academic & Field Research</h3>
-            <div class="resume-item">
-              <h4>Fintech Customer Loyalty Capstone</h4>
-              <h5>Aug 2025 - Jun 2026</h5>
-              <p><em>Ashesi University Department of Business Administration</em></p>
-              <ul>
-                <li>Applied the SERVQUAL analytical framework to assess rural customer loyalty dynamics and retention bottlenecks across Ghanaian mobile banking platforms.</li>
-                <li>Delivered clear data-backed interventions for product design and regional customer service.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Clean Energy User Modeling</h4>
-              <h5>2024 - 2025</h5>
-              <p><em>Fieldwork Initiative</em></p>
-              <ul>
-                <li>Conducted field interviews with artisanal fishery operators to evaluate the adoption economics of modernized clean cookstove technologies.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Work Experience</h3>
-
-            <div class="resume-item">
-              <h4>Founder &amp; Executive Lead</h4>
-              <h5>Jan 2025 - Present</h5>
-              <p><em>Carbon Clarity &middot; Accra, Ghana</em></p>
-              <ul>
-                <li>Engineered the "Visual Bridge" concept solving carbon market transparency bottlenecks, securing 1st place in the IOM Mozambique x AI for Infrastructure Hackathon.</li>
-                <li>Partnered with Catalyste+ under a Global Affairs Canada initiative to validate measurement, reporting, and verification (MRV) models for community-level carbon credits.</li>
-                <li>Built operational frameworks connecting verified clean-energy initiatives with international voluntary carbon markets.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Data &amp; Policy Research Lead</h4>
-              <h5>Apr 2026 - Present</h5>
-              <p><em>Graduate Guidance Group (G3) &middot; Accra, Ghana</em></p>
-              <ul>
-                <li>Audited and refined cross-border policy matrices spanning 54 African countries to maintain rigorous data integrity.</li>
-                <li>Identified a 150% visa fee disparity impacting international scholars, drafting comparative policy briefs submitted for regional advocacy.</li>
-                <li>Architected an interactive visa barrier classification system across 18 regional jurisdictions, cutting intake processing time by 35%.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Research Collaborator (Transit Economics)</h4>
-              <h5>Feb 2026 - Apr 2026</h5>
-              <p><em>Microsoft x Ashesi University &middot; Accra, Ghana</em></p>
-              <ul>
-                <li>Analyzed economic friction across 12 high-density urban transit corridors in Accra.</li>
-                <li>Co-engineered the <em>Commuter Fluidity Index</em> under executive mentorship, accelerating route efficiency assessments by 40%.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-<!-- ======= Interactive Category Hub & Filter Navigation ======= -->
-<div class="portfolio-category-wrapper mb-5" data-aos="fade-up" data-aos-delay="100">
-  
-  <!-- Category Action Cards / Direct Links -->
-  <div class="row g-3 mb-4">
-    
-    <!-- All Highlights -->
-    <div class="col-lg-3 col-md-6">
-      <div class="category-card p-3 rounded shadow-sm text-center h-100 bg-white border">
-        <div class="icon-box text-primary fs-3 mb-2">
-          <i class="bi bi-grid-fill"></i>
-        </div>
-        <h6 class="fw-bold mb-1">All Highlights</h6>
-        <p class="small text-muted mb-3">Complete archive across all projects & research.</p>
-        <div class="d-flex justify-content-center gap-2">
-          <button type="button" class="btn btn-sm btn-outline-primary filter-trigger" data-filter="*">Filter Grid</button>
-          <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="Open Complete Drive Archive">
-            <i class="bi bi-folder-symlink"></i> Docs
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Climate & Ventures -->
-    <div class="col-lg-3 col-md-6">
-      <div class="category-card p-3 rounded shadow-sm text-center h-100 bg-white border">
-        <div class="icon-box text-success fs-3 mb-2">
-          <i class="bi bi-tree-fill"></i>
-        </div>
-        <h6 class="fw-bold mb-1">Climate &amp; Ventures</h6>
-        <p class="small text-muted mb-3">Carbon Clarity, MRV systems &amp; clean-tech enterprise.</p>
-        <div class="d-flex justify-content-center gap-2">
-          <button type="button" class="btn btn-sm btn-outline-success filter-trigger" data-filter=".filter-climate">Filter Grid</button>
-          <a href="#climate-info-modal" data-bs-toggle="modal" class="btn btn-sm btn-success">
-            <i class="bi bi-info-circle"></i> View Info
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Policy & Economic Research -->
-    <div class="col-lg-3 col-md-6">
-      <div class="category-card p-3 rounded shadow-sm text-center h-100 bg-white border">
-        <div class="icon-box text-info fs-3 mb-2">
-          <i class="bi bi-file-earmark-bar-graph-fill"></i>
-        </div>
-        <h6 class="fw-bold mb-1">Policy &amp; Research</h6>
-        <p class="small text-muted mb-3">Visa matrices, transit elasticity &amp; SERVQUAL thesis.</p>
-        <div class="d-flex justify-content-center gap-2">
-          <button type="button" class="btn btn-sm btn-outline-info filter-trigger" data-filter=".filter-research">Filter Grid</button>
-          <a href="#policy-info-modal" data-bs-toggle="modal" class="btn btn-sm btn-info text-white">
-            <i class="bi bi-info-circle"></i> View Info
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product & Design -->
-    <div class="col-lg-3 col-md-6">
-      <div class="category-card p-3 rounded shadow-sm text-center h-100 bg-white border">
-        <div class="icon-box text-warning fs-3 mb-2">
-          <i class="bi bi-palette-fill"></i>
-        </div>
-        <h6 class="fw-bold mb-1">Product &amp; Design</h6>
-        <p class="small text-muted mb-3">Visual Bridge UI/UX, tools &amp; digital frontends.</p>
-        <div class="d-flex justify-content-center gap-2">
-          <button type="button" class="btn btn-sm btn-outline-warning filter-trigger" data-filter=".filter-tech">Filter Grid</button>
-          <a href="#design-info-modal" data-bs-toggle="modal" class="btn btn-sm btn-warning text-dark">
-            <i class="bi bi-info-circle"></i> View Info
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Traditional Horizontal Filter Bar -->
-  <ul class="portfolio-filters isotope-filters text-center list-inline mb-0">
-    <li data-filter="*" class="list-inline-item filter-active">All Highlights</li>
-    <li data-filter=".filter-climate" class="list-inline-item">Climate &amp; Ventures</li>
-    <li data-filter=".filter-research" class="list-inline-item">Policy &amp; Economic Research</li>
-    <li data-filter=".filter-tech" class="list-inline-item">Product &amp; Design</li>
-  </ul>
-</div>
-
-<!-- =========================================================
-     CATEGORY DETAIL MODALS (Information Hub for each Pillar)
-========================================================= -->
-
-<!-- Modal 1: Climate & Ventures -->
-<div class="modal fade" id="climate-info-modal" tabindex="-1" aria-labelledby="climateModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 shadow">
-      <div class="modal-header bg-success text-white">
-        <h5 class="modal-title fw-bold" id="climateModalLabel"><i class="bi bi-tree me-2"></i>Climate &amp; Ventures Information</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-4">
-        <h6 class="fw-bold text-success">Pillar Overview</h6>
-        <p class="text-muted">
-          Focused on structuring carbon finance mechanisms, digital Measurement, Reporting, and Verification (dMRV), and connecting grassroot ecological initiatives in West and Southern Africa to the voluntary carbon market.
-        </p>
-        <h6 class="fw-bold text-dark mt-3">Featured Deliverables &amp; Documentation</h6>
-        <ul class="list-group list-group-flush mb-3">
-          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-            <div>
-              <strong>Carbon Clarity NFP Brief</strong>
-              <div class="small text-muted">Partnership model under Global Affairs Canada / Catalyste+</div>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">Open Dossier</a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-            <div>
-              <strong>Farmer Delivery Enterprise (FDE)</strong>
-              <div class="small text-muted">Agent-based supply chain prototype &amp; food spoilage reduction data</div>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">Open Report</a>
-          </li>
+        <ul class="proof">
+          <li class="o"><b>1st</b><span>of 8 teams at the IOM Mozambique hackathon</span></li>
+          <li class="n"><b>54</b><span>African countries in the visa policy matrix I audited</span></li>
+          <li class="c"><b>40%</b><span>faster route assessments with the Commuter Fluidity Index</span></li>
         </ul>
       </div>
-      <div class="modal-footer bg-light">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-success">Browse Full Category Drive</a>
+      <figure class="map-fig">
+        <svg id="africa" viewBox="-30 0 760 740" role="img" aria-labelledby="map-title">
+          <title id="map-title">Map of Africa marking Juba, Accra, Mozambique and Johannesburg</title>
+          <g id="dots"></g>
+          <path class="route" id="route" d=""></path>
+          <g id="pins"></g>
+        </svg>
+        <figcaption>From Juba to Accra, and the places the work has taken me since.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="block" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="about-h">About</h2></div>
+      <div class="about-grid">
+        <img class="portrait" src="img/pout-chop-jal.jpg" alt="Portrait of Pout Chop Jal" width="800" height="800">
+        <div class="about-text">
+          <p>I work where commercial strategy, climate technology and regulation meet, mostly in markets that global finance still underserves.</p>
+          <p>I grew up in South Sudan and studied Business Administration at Ashesi University in Ghana as a Mastercard Foundation Scholar. In November 2025 I founded Carbon Clarity to make carbon markets more transparent for the communities whose projects generate the credits. I also work as a technical assistant with the Nkabom Collaborative at Ashesi and as market manager for Yamalé, an African legal-tech platform.</p>
+          <p>My work moves between field interviews and spreadsheets, policy briefs and product prototypes. I have built compliance and risk models, aligned partners such as Global Affairs Canada, Catalyste+ and Microsoft, and led data projects from first question to finished tool.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Accra, Ghana</dd></div>
+          <div><dt>Education</dt><dd>BSc Business Administration, Ashesi University</dd></div>
+          <div><dt>Focus</dt><dd>Climate finance, policy research, valuation</dd></div>
+          <div><dt>Languages</dt><dd>English, Arabic, Nuer</dd></div>
+        </dl>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- Modal 2: Policy & Economic Research -->
-<div class="modal fade" id="policy-info-modal" tabindex="-1" aria-labelledby="policyModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 shadow">
-      <div class="modal-header bg-info text-white">
-        <h5 class="modal-title fw-bold" id="policyModalLabel"><i class="bi bi-file-earmark-bar-graph me-2"></i>Policy &amp; Economic Research Information</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- Work -->
+  <section class="block" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="work-h">Selected work</h2>
+        <p>Seven projects across three areas. Each is colored by area so you can follow a thread through the page.</p>
       </div>
-      <div class="modal-body p-4">
-        <h6 class="fw-bold text-info">Pillar Overview</h6>
-        <p class="text-muted">
-          Quantitative and qualitative research analyzing policy bottlenecks, intra-African mobility hurdles, commuter efficiency indices, and customer retention metrics across fintech institutions.
-        </p>
-        <h6 class="fw-bold text-dark mt-3">Featured Research Papers &amp; Studies</h6>
-        <ul class="list-group list-group-flush mb-3">
-          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-            <div>
-              <strong>Pan-African Visa &amp; Mobility Matrix</strong>
-              <div class="small text-muted">54-country dataset identifying 150% cost discrepancies for scholars</div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">All <small>7</small></button>
+        <button class="chip k-c" type="button" data-filter="climate" aria-pressed="false"><i aria-hidden="true"></i>Climate &amp; ventures <small>4</small></button>
+        <button class="chip k-n" type="button" data-filter="policy" aria-pressed="false"><i aria-hidden="true"></i>Policy &amp; research <small>4</small></button>
+        <button class="chip k-o" type="button" data-filter="product" aria-pressed="false"><i aria-hidden="true"></i>Product &amp; design <small>2</small></button>
+      </div>
+
+      <ul class="projects" id="projects">
+        <li class="project k-c" data-areas="climate policy">
+          <div class="figure"><b>&gt;80%</b><span>of Ghana's fish processors still use a 1969 kiln</span></div>
+          <div class="body">
+            <h3>Cleaner fish smoking in James Town</h3>
+            <div class="tags"><span class="tag">Climate &amp; ventures</span><span class="tag k-n">Policy &amp; research</span></div>
+            <p>Most of Ghana's fish is smoked by women over open wood fires. Carbon finance could pay for cleaner stoves, but there is no trusted field data to prove the savings, and carbon income rarely reaches the women. This Carbon Clarity project, part of Nkabom Research Projects at Ashesi, sets out to change both.</p>
+            <div class="shots">
+              <img src="img/james-town-team.jpg" alt="Pout Chop Jal with two members of the Carbon Clarity team at the fish smoking site in James Town" width="1080" height="482" loading="lazy">
+              <img src="img/james-town-kiln.jpg" alt="Smoke rising from a traditional fish smoking kiln" width="576" height="330" loading="lazy">
+              <img src="img/james-town-fish.jpg" alt="Fish laid on a smoking rack" width="576" height="330" loading="lazy">
             </div>
-            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info">View Study</a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-            <div>
-              <strong>Microsoft x Ashesi Informal Transit Study</strong>
-              <div class="small text-muted">Commuter Fluidity Index mapping 12+ urban routes in Accra</div>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info">View Study</a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-            <div>
-              <strong>Fintech Loyalty Capstone (SERVQUAL)</strong>
-              <div class="small text-muted">Empirical study on rural Ghanaian mobile banking retention</div>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-info">Read Thesis</a>
-          </li>
-        </ul>
-      </div>
-      <div class="modal-footer bg-light">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-info text-white">Browse Full Category Drive</a>
-      </div>
-    </div>
-  </div>
-</div>
+            <ul class="did">
+              <li>Phase 1, under way: finished baseline fieldwork on kilns, fuel, smoke and costs in October 2026. A working paper and a side-by-side study of the traditional kiln against an improved stove come next.</li>
+              <li>Phase 2: refine the stove with the women who use it and fit IoT sensors that collect fuel data to carbon-audit standard.</li>
+              <li>Phase 3: turn verified savings into carbon credits and pay the income to the women by mobile money.</li>
+            </ul>
+          </div>
+          <div class="meta">
+            <div><strong>Target</strong>Up to 50% less spent on firewood, to be confirmed by the study</div>
+            <div><strong>Status</strong>Phase 1 of 3. Stove, sensors and payments are planned, not yet deployed</div>
+            <a href="img/carbon-clarity-flyer.pdf" target="_blank" rel="noopener">Read the project flyer</a>
+          </div>
+        </li>
 
-<!-- Modal 3: Product & Design -->
-<div class="modal fade" id="design-info-modal" tabindex="-1" aria-labelledby="designModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0 shadow">
-      <div class="modal-header bg-warning text-dark">
-        <h5 class="modal-title fw-bold" id="designModalLabel"><i class="bi bi-palette me-2"></i>Product &amp; UI/UX Information</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-4">
-        <h6 class="fw-bold text-dark">Pillar Overview</h6>
-        <p class="text-muted">
-          Transforming data transparency models into accessible digital interfaces, wireframes, and responsive user-facing tools.
-        </p>
-        <h6 class="fw-bold text-dark mt-3">Featured Prototypes &amp; Systems</h6>
-        <ul class="list-group list-group-flush mb-3">
-          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-            <div>
-              <strong>Visual Bridge Data Tool Prototype</strong>
-              <div class="small text-muted">1st Place IOM Mozambique x AI for Infrastructure UI/UX solution</div>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-warning text-dark">View Assets</a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-            <div>
-              <strong>Portfolio &amp; Data System Interfaces</strong>
-              <div class="small text-muted">Front-end architecture and standardized visual workflows</div>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-warning text-dark">View Assets</a>
-          </li>
-        </ul>
-      </div>
-      <div class="modal-footer bg-light">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-warning text-dark">Browse Full Category Drive</a>
-      </div>
-    </div>
-  </div>
-</div>
+        <li class="project k-c" data-areas="climate">
+          <div class="figure"><b>2,770</b><span>displaced households in the Mozambique plan</span></div>
+          <div class="body">
+            <h3>Carbon Clarity</h3>
+            <div class="tags"><span class="tag">Climate &amp; ventures</span></div>
+            <p>A venture connecting rural and displaced communities in Africa to international carbon markets, with digital measurement, reporting and verification (dMRV) that people without formal education can follow.</p>
+            <ul class="did">
+              <li>Wrote the strategy to bring 2,770 displaced households in Mozambique into the carbon credit value chain, with a three-phase roadmap.</li>
+              <li>Designed the "Inflation Shield", a visual-first floor price of $17 to $21 per credit that builds trust and carbon literacy among households.</li>
+              <li>Built a revenue model on a $1.50 service fee per credit, reaching operational self-sufficiency by year three.</li>
+              <li>Partnered with Catalyste+, under a Global Affairs Canada initiative, to validate MRV models for community-level carbon credits.</li>
+            </ul>
+          </div>
+          <div class="meta">
+            <div><strong>Role</strong>Founder &amp; CEO, since Nov 2025</div>
+            <div><strong>Partners</strong>IOM Mozambique, Catalyste+, Global Affairs Canada</div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener">Read the brief</a>
+          </div>
+        </li>
 
-<!-- Vendor JS Files -->
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
-  <script src="vendor/aos/aos.js"></script>
-  <script src="vendor/typed.js/typed.umd.js"></script>
-  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+        <li class="project k-o" data-areas="product climate">
+          <div class="figure"><b>1st</b><span>of 8 international teams</span></div>
+          <div class="body">
+            <h3>Visual Bridge</h3>
+            <div class="tags"><span class="tag">Product &amp; design</span><span class="tag k-c">Climate &amp; ventures</span></div>
+            <p>A data tool that makes carbon accounting legible to the people a project affects, not only to auditors and buyers.</p>
+            <ul class="did">
+              <li>Designed the concept and interface that took first place at the IOM Mozambique × AL for Infrastructure hackathon.</li>
+              <li>Turned the transparency gap in carbon markets into a visual flow a non-specialist can follow.</li>
+            </ul>
+          </div>
+          <div class="meta">
+            <div><strong>Result</strong>First place, Feb 2026</div>
+            <div><strong>Role</strong>Concept and product design</div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener">See the prototype</a>
+          </div>
+        </li>
 
-  <!-- Main Template JS File -->
-  <script src="js/main.js"></script>
+        <li class="project k-n" data-areas="policy product">
+          <div class="figure"><b>54</b><span>countries audited</span></div>
+          <div class="body">
+            <h3>Pan-African visa and mobility matrix</h3>
+            <div class="tags"><span class="tag">Policy &amp; research</span><span class="tag k-o">Product &amp; design</span></div>
+            <p>A cross-border policy dataset showing what it costs international students to study and live in another African country.</p>
+            <ul class="did">
+              <li>Audited and corrected the data for all 54 country profiles in the master policy matrix.</li>
+              <li>Found that standard international students pay 150% more in visa costs than East African Community scholars, evidence now used in two policy advocacy proposals.</li>
+              <li>Designed a standard visa barrier system across 18 countries that cut student intake assessments by 35%.</li>
+              <li>Interviewed international students to document the barriers independent students face.</li>
+            </ul>
+          </div>
+          <div class="meta">
+            <div><strong>Role</strong>Data specialist and research intern, Graduate Guidance Group (G3 Africa)</div>
+            <div><strong>Since</strong>Apr 2026</div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener">View the study</a>
+          </div>
+        </li>
 
-  <!-- Interactive Controls: Slider, Isotope Filters & Lightbox -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      
-      // 1. Initialize Hero Background Slider
-      if (typeof Swiper !== 'undefined') {
-        new Swiper('.hero-slider', {
-          loop: true,
-          speed: 1200,
-          effect: 'fade',
-          fadeEffect: { crossFade: true },
-          autoplay: {
-            delay: 4500,
-            disableOnInteraction: false
-          }
-        });
-      }
+        <li class="project k-n" data-areas="policy">
+          <div class="figure"><b>40%</b><span>faster route assessments</span></div>
+          <div class="body">
+            <h3>Commuter Fluidity Index</h3>
+            <div class="tags"><span class="tag">Policy &amp; research</span></div>
+            <p>A measure of economic friction in Accra's transit, built by a team of four in the Ashesi Microsoft Future Builders Programme. Our team was named a winner.</p>
+            <ul class="did">
+              <li>Mapped economic friction across more than 12 transit routes in Accra using operational data.</li>
+              <li>Surveyed over 200 commuters and turned the patterns into five evidence-based policy recommendations.</li>
+              <li>Built the index that makes transport planning assessments 40% faster.</li>
+            </ul>
+          </div>
+          <div class="meta">
+            <div><strong>Result</strong>Winner, Future Builders Programme</div>
+            <div><strong>Role</strong>Researcher, Feb – Apr 2026</div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener">View the study</a>
+          </div>
+        </li>
 
-      // 2. Initialize Typed.js
-      const selectTyped = document.querySelector('.typed');
-      if (selectTyped && typeof Typed !== 'undefined') {
-        let typed_strings = selectTyped.getAttribute('data-typed-items');
-        typed_strings = typed_strings.split(',');
-        new Typed('.typed', {
-          strings: typed_strings,
-          loop: true,
-          typeSpeed: 50,
-          backSpeed: 25,
-          backDelay: 2000
-        });
-      }
+        <li class="project k-c" data-areas="climate">
+          <div class="figure"><b>ABM</b><span>agent-based supply chain model</span></div>
+          <div class="body">
+            <h3>Farmer Delivery Enterprise</h3>
+            <div class="tags"><span class="tag">Climate &amp; ventures</span></div>
+            <p>A supply chain prototype that connects smallholder farmers directly to buyers, cutting out middlemen and the food spoilage that comes with long chains.</p>
+            <ul class="did">
+              <li>Modeled the chain agent by agent to test where delays and losses come from.</li>
+              <li>Collected spoilage-reduction data to support the business case.</li>
+            </ul>
+          </div>
+          <div class="meta">
+            <div><strong>Type</strong>Venture prototype</div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener">Read the report</a>
+          </div>
+        </li>
 
-      // 3. Initialize Isotope Layout & Category Filters
-      const portfolioContainer = document.querySelector('.isotope-container');
-      if (portfolioContainer && typeof Isotope !== 'undefined') {
-        imagesLoaded(portfolioContainer, function () {
-          const iso = new Isotope(portfolioContainer, {
-            itemSelector: '.isotope-item',
-            layoutMode: 'masonry',
-            filter: '*'
-          });
-
-          const filterButtons = document.querySelectorAll('.portfolio-filters li');
-          filterButtons.forEach(function (button) {
-            button.addEventListener('click', function () {
-              filterButtons.forEach(btn => btn.classList.remove('filter-active'));
-              this.classList.add('filter-active');
-              iso.arrange({ filter: this.getAttribute('data-filter') });
-              if (typeof AOS !== 'undefined') {
-                iso.on('arrangeComplete', function () {
-                  AOS.refresh();
-                });
-              }
-            });
-          });
-        });
-      }
-
-      // 4. Initialize GLightbox for Image Popups
-      if (typeof GLightbox !== 'undefined') {
-        GLightbox({ selector: '.glightbox' });
-      }
-
-      // 5. Initialize PureCounter
-      if (typeof PureCounter !== 'undefined') {
-        new PureCounter();
-      }
-
-    });
-  </script>
-</body>
-</html>
-
-<!-- ======= Unified Portfolio Section ======= -->
-<section id="portfolio" class="portfolio section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Featured Ventures & Research</h2>
-    <p>Explore my initiatives across climate solutions, data policy, and technical research.</p>
-  </div>
-
-  <div class="container">
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-      <!-- Interactive Filter Buttons -->
-      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">All Highlights</li>
-        <li data-filter=".filter-climate">Climate & Ventures</li>
-        <li data-filter=".filter-research">Policy & Economic Research</li>
-        <li data-filter=".filter-tech">Product & Design</li>
+        <li class="project k-n" data-areas="policy">
+          <div class="figure"><b>5</b><span>SERVQUAL service dimensions tested</span></div>
+          <div class="body">
+            <h3>What keeps rural mobile money customers loyal</h3>
+            <div class="tags"><span class="tag">Policy &amp; research</span></div>
+            <p>My capstone thesis on service quality and retention across Ghanaian mobile banking platforms in rural areas.</p>
+            <ul class="did">
+              <li>Applied the SERVQUAL framework to find the service gaps that drive customers away.</li>
+              <li>Recommended specific changes to product design and regional customer service.</li>
+            </ul>
+          </div>
+          <div class="meta">
+            <div><strong>Type</strong>Capstone thesis, Ashesi University</div>
+            <div><strong>When</strong>Aug 2025 – Jun 2026</div>
+            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener">Read the thesis</a>
+          </div>
+        </li>
       </ul>
+    </div>
+  </section>
 
-      <!-- Portfolio Grid Items -->
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-        <!-- Item 1: Carbon Clarity (Climate & Ventures) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-climate">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/award-e.jpeg" class="img-fluid rounded-top" alt="Carbon Clarity Venture">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-primary mb-2">Climate Venture</span>
-              <h4>Carbon Clarity NFP</h4>
-              <p class="small text-muted">A digital MRV & transparency system linking verified local green initiatives to international carbon finance.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/award-e.jpeg" title="Carbon Clarity" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 2: Visual Bridge (Product & Design / Climate) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech filter-climate">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/visual-bridge.jpg" class="img-fluid rounded-top" alt="Visual Bridge Interface">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-success mb-2">1st Place Award</span>
-              <h4>Visual Bridge Data Tool</h4>
-              <p class="small text-muted">Award-winning data platform created for the IOM Mozambique x AI for Infrastructure Hackathon.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/visual-bridge.jpg" title="Visual Bridge Tool" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 3: Pan-African Visa Matrix (Policy & Research) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/visa-matrix.jpg" class="img-fluid rounded-top" alt="Pan-African Policy Matrix">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-info text-dark mb-2">Policy Analysis</span>
-              <h4>Pan-African Mobility Matrix</h4>
-              <p class="small text-muted">Audited cross-border policies across 54 countries to uncover regulatory and financial frictions.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/visa-matrix.jpg" title="Mobility Matrix" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 4: Microsoft Transit Study (Policy & Research) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/transit-study.jpg" class="img-fluid rounded-top" alt="Accra Transit Case Study">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-dark mb-2">Urban Analytics</span>
-              <h4>Informal Transit Case Study</h4>
-              <p class="small text-muted">Co-developed the Commuter Fluidity Index with Microsoft & Ashesi University.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/transit-study.jpg" title="Transit Study" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 5: Farmer Delivery Enterprise (Climate & Ventures) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-climate">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/business-market-entry.jpeg" class="img-fluid rounded-top" alt="Farmer Delivery Enterprise">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-warning text-dark mb-2">Supply Chain</span>
-              <h4>Farmer Delivery Enterprise</h4>
-              <p class="small text-muted">Designed an agent-based supply chain prototype eliminating middlemen for smallholder farmers.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/business-market-entry.jpeg" title="Farmer Delivery Enterprise" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 6: SERVQUAL Capstone (Policy & Research) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-          <div class="portfolio-content h-100 shadow-sm rounded">
-            <img src="img/portfolio/research-consumer.jpg" class="img-fluid rounded-top" alt="Fintech Customer Loyalty Research">
-            <div class="portfolio-info p-3">
-              <span class="badge bg-secondary mb-2">Academic Thesis</span>
-              <h4>Fintech Customer Loyalty</h4>
-              <p class="small text-muted">Rigorous empirical thesis identifying service quality drivers in Ghanaian rural mobile money networks.</p>
-              <div class="d-flex gap-2 mt-2">
-                <a href="img/portfolio/research-consumer.jpg" title="Fintech Thesis" data-gallery="portfolio-gallery" class="glightbox preview-link btn btn-sm btn-outline-secondary"><i class="bi bi-zoom-in"></i> Preview</a>
-                <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
+  <!-- Capabilities -->
+  <section class="block" id="capabilities" aria-labelledby="cap-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="cap-h">What I bring</h2>
+        <p>Each skill below points to where I used it.</p>
+      </div>
+      <div class="caps">
+        <div class="cap"><h3>Climate finance and carbon markets</h3><p>dMRV design, credit verification models, linking projects to voluntary carbon markets.</p><p class="ev"><em>Used in </em>Carbon Clarity, Visual Bridge</p></div>
+        <div class="cap"><h3>Policy and regulatory research</h3><p>Cross-border policy matrices, compliance risk, comparative briefs for advocacy.</p><p class="ev"><em>Used in </em>Visa and mobility matrix</p></div>
+        <div class="cap"><h3>Quantitative and field research</h3><p>Survey design, SERVQUAL, index construction, interviews with operators in the field.</p><p class="ev"><em>Used in </em>Fluidity Index, capstone, clean cookstove fieldwork</p></div>
+        <div class="cap"><h3>Strategy and valuation</h3><p>Pricing and revenue models, competitive strategy, market entry and project management.</p><p class="ev"><em>Used in </em>Farmer Delivery Enterprise, Carbon Clarity</p></div>
+        <div class="cap"><h3>Data products and prototyping</h3><p>Turning datasets into tools people can use: classification systems, dashboards, interfaces.</p><p class="ev"><em>Used in </em>Visual Bridge, visa barrier classifier</p></div>
+        <div class="cap"><h3>Partnerships across borders</h3><p>Aligning funders, governments, universities and companies around one deliverable.</p><p class="ev"><em>Used with </em>Global Affairs Canada, Catalyste+, Microsoft, IOM</p></div>
       </div>
     </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="block" id="experience" aria-labelledby="exp-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="exp-h">Experience</h2><p>Work first, then education and research.</p></div>
+      <div class="exp-grid">
+        <div>
+          <h3 class="col">Work</h3>
+          <ol class="timeline">
+            <li>
+              <div class="when">Now<br><span class="now">Current</span></div>
+              <div>
+                <h4>Technical Assistant</h4>
+                <p class="org">Nkabom Collaborative, Office of the Provost, Ashesi University</p>
+                <ul><li>Support Nkabom Research Projects, including Carbon Clarity's fish smoking study in James Town.</li></ul>
+              </div>
+            </li>
+            <li>
+              <div class="when">Now<br><span class="now">Current</span></div>
+              <div>
+                <h4>Market Manager</h4>
+                <p class="org">Yamalé. Remote</p>
+                <ul><li>Lead market work for Yamalé, an AI legal research platform built for the legal systems of 55 African jurisdictions.</li></ul>
+              </div>
+            </li>
+            <li>
+              <div class="when">May 2026 – now<br><span class="now">Current</span></div>
+              <div>
+                <h4>Entry Evaluation Panelist &amp; Judge</h4>
+                <p class="org">Royal Commonwealth Society, Nordic-Baltic Hub. Part-time, remote</p>
+                <ul>
+                  <li>Judged essays and poetry on the global panel of The Queen's Commonwealth Writing Competition, which drew 53,840 entries from 56 countries.</li>
+                  <li>Gave feedback to young writers within a shared international grading framework.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="when">Apr 2026 – now<br><span class="now">Current</span></div>
+              <div>
+                <h4>Data Specialist and Research Intern</h4>
+                <p class="org">Graduate Guidance Group (G3 Africa). Remote</p>
+                <ul>
+                  <li>Audited and corrected the data for 54 country profiles in a master policy matrix on student mobility and visas.</li>
+                  <li>Quantified a 150% visa cost gap between standard international students and EAC scholars, used in two policy advocacy proposals.</li>
+                  <li>Designed a standard visa barrier system for 18 countries, cutting intake assessment time by 35%.</li>
+                  <li>Interviewed international students about the barriers they face.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="when">Feb – Apr 2026</div>
+              <div>
+                <h4>Researcher</h4>
+                <p class="org">Microsoft × Ashesi University, Accra</p>
+                <ul>
+                  <li>Mapped economic friction across 12+ transit routes and surveyed 200+ commuters.</li>
+                  <li>Built the Commuter Fluidity Index, making planning assessments 40% faster. The team won the Future Builders Programme.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="when">Nov 2025 – now<br><span class="now">Current</span></div>
+              <div>
+                <h4>Founder &amp; CEO</h4>
+                <p class="org">Carbon Clarity, Accra</p>
+                <ul>
+                  <li>Won the IOM Mozambique × AL for Infrastructure hackathon with the Visual Bridge transparency system.</li>
+                  <li>Designed the "Inflation Shield" pricing and a $1.50-per-credit fee model that reaches self-sufficiency by year three.</li>
+                  <li>Validated community-level MRV models with Catalyste+ under a Global Affairs Canada initiative.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="when">Feb 2025 – now</div>
+              <div>
+                <h4>Virtual Intern</h4>
+                <p class="org">Excelerate, Rochester Institute of Technology. Remote</p>
+                <ul><li>Practiced prompt design for AI models, content optimization and campaign execution for business goals.</li></ul>
+              </div>
+            </li>
+            <li>
+              <div class="when">2023</div>
+              <div>
+                <h4>Business Development and Sales Intern</h4>
+                <p class="org">Thematic. Remote</p>
+                <ul><li>Researched the music industry and artist profiles and presented the trends.</li></ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3 class="col">Education and research</h3>
+          <ol class="timeline">
+            <li>
+              <div class="when">2022 – 2026</div>
+              <div>
+                <h4>BSc Business Administration</h4>
+                <p class="org">Ashesi University, Ghana. Mastercard Foundation Scholar</p>
+                <ul>
+                  <li>Corporate finance, competitive strategy, managerial accounting, strategic marketing.</li>
+                  <li>D-Lab project member, Ashesi Robotics Experience mentor, and tutor on the Berekuso Math Community Project.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="when">Aug 2025 – Jun 2026</div>
+              <div>
+                <h4>Capstone: fintech customer loyalty</h4>
+                <p class="org">Department of Business Administration</p>
+              </div>
+            </li>
+            <li>
+              <div class="when">2024 – 2025</div>
+              <div>
+                <h4>Clean energy user research</h4>
+                <p class="org">Fieldwork initiative</p>
+                <ul><li>Interviewed artisanal fishery operators on the economics of adopting clean cookstoves.</li></ul>
+              </div>
+            </li>
+            <li>
+              <div class="when">2019</div>
+              <div>
+                <h4>Secondary education, with distinction</h4>
+                <p class="org">Equity High School, Juba, South Sudan</p>
+              </div>
+            </li>
+          </ol>
+          <h3 class="col" style="margin-top:2rem">Certifications</h3>
+          <ul class="certs">
+            <li><span>Fundamentals of Agile Project Management</span><small>Project Management Institute, 2026</small></li>
+            <li><span>Career readiness mentorship (Student English Program)</span><small>Global Mentorship Initiative, 2026</small></li>
+            <li><span>AI-Integrated Leadership Program</span><small>Aspire Institute with Adobe, 2025</small></li>
+            <li><span>Enterprise Design Thinking Practitioner</span><small>IBM, 2023</small></li>
+            <li><span>Lean Six Sigma White Belt</span><small>2023</small></li>
+            <li><span>Virtual Professional Development Series</span><small>The Leadership Alliance, 2023</small></li>
+            <li><span>Paragon One Certificate</span><small>Paragon One, 2023</small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Honors -->
+  <section class="block" id="honors" aria-labelledby="hon-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="hon-h">Honors</h2><p>Awards, credentials and service in 2026.</p></div>
+
+      <div class="gallery" aria-label="Photos from the African Leadership Festival, Johannesburg">
+        <figure class="g-a"><img src="img/awardees-on-stage.jpg" alt="Pout Chop Jal on stage with fellow award winners at the African Leadership Festival, each holding a glass award" width="1280" height="853" loading="lazy"><figcaption>On stage with this year's award winners</figcaption></figure>
+        <figure class="g-b"><img src="img/with-the-award.jpg" alt="Pout Chop Jal holding the Sector Impact Award" width="720" height="957" loading="lazy"><figcaption>With the Sector Impact Award</figcaption></figure>
+        <figure class="g-c"><img src="img/african-leadership-festival.jpg" alt="Pout Chop Jal with three peers in front of the African Leadership Academy, Anzisha and Africa Career Networks banner" width="720" height="960" loading="lazy"><figcaption>With peers at the festival</figcaption></figure>
+        <figure class="g-d"><img src="img/sector-awards-stage.jpg" alt="Sector Awards stage, Pout Chop Jal at the right holding his award" width="800" height="640" loading="lazy"><figcaption>Sector Awards ceremony</figcaption></figure>
+      </div>
+
+      <div class="honors-grid">
+        <figure class="trophy">
+          <img src="img/sector-impact-award.jpg" alt="Glass Sector Impact Award from Africa Career Networks, presented to Pout Chop Jal" width="720" height="957" loading="lazy">
+          <figcaption>Sector Impact Award, presented by Africa Career Networks</figcaption>
+        </figure>
+        <ol class="honors">
+          <li>
+            <time datetime="2026-10">Oct 2026</time>
+            <div>
+              <h3>Winner, Ashesi Microsoft Future Builders Programme</h3>
+              <p class="where">Ashesi University and Microsoft</p>
+              <p class="desc">My team of four was named a winner for the Commuter Fluidity Index, our data-driven tool for Accra's transit. The Business Administration Department formally recognized the team for creativity, problem-solving and execution.</p>
+              <figure class="clip">
+                <video controls preload="none" playsinline poster="img/future-builders-poster.jpg" width="672" height="448">
+                  <source src="img/future-builders.mp4" type="video/mp4">
+                </video>
+                <figcaption>AI-generated video based on the Future Builders Programme at Ashesi University</figcaption>
+              </figure>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-08">Aug 2026</time>
+            <div>
+              <h3>Sector Impact Award, AL for Infrastructure</h3>
+              <p class="where">Africa Career Networks, African Leadership Festival, Johannesburg</p>
+              <p class="desc">One of six sector winners at the inaugural festival, recognized on stage before more than 300 African leaders for leadership, contribution and engagement in the AL for Infrastructure community.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-05">May 2026</time>
+            <div class="with-badge">
+              <div>
+                <h3>Career readiness mentorship</h3>
+                <p class="where">Global Mentorship Initiative</p>
+                <p class="desc">Completed GMI's career readiness mentorship, through Ashesi Career Services, mentored by Gamunu (George) Jayasinghe. <a href="img/gmi-certificate.jpg" target="_blank" rel="noopener">View certificate</a></p>
+              </div>
+              <img class="badge" src="img/gmi-badge.png" alt="Global Mentorship Initiative certificate of completion badge, 7 May 2026" width="240" height="240" loading="lazy">
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-02">Feb 2026</time>
+            <div>
+              <h3>First place, IOM Mozambique hackathon</h3>
+              <p class="where">With the African Leadership community</p>
+              <p class="desc">Top prize among 8 international teams for Visual Bridge, a carbon accounting transparency tool.</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026">2026</time>
+            <div>
+              <h3>Judge, The Queen's Commonwealth Writing Competition</h3>
+              <p class="where">Royal Commonwealth Society</p>
+              <p class="desc">Judged entries in a record year of 53,840 submissions from all 56 Commonwealth countries, and received the Society's certificate of appreciation. <a href="img/qcwc-certificate.jpg" target="_blank" rel="noopener">View certificate</a></p>
+            </div>
+          </li>
+          <li>
+            <span class="time">Member</span>
+            <div>
+              <h3>Fly for Peace</h3>
+              <p class="where">Children's Global Peace Movement</p>
+              <p class="desc">Welcomed into a global movement that brings children and young people together through friendship and cultural exchange.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Endorsements -->
+  <section class="block" id="endorsements" aria-labelledby="end-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="end-h">What people say</h2></div>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote>Pout's analytical skills are truly impressive. He quickly grasps complex business challenges and proposes well-researched, practical solutions. He is a valuable asset to any team.</blockquote>
+          <figcaption><img src="img/gamunu-jayasinghe.jpg" alt="" width="160" height="160" ><div><strong>Gamunu Jayasinghe</strong><span>My mentor, Global Mentorship Initiative</span></div></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>Over the past year, I've had the pleasure of mentoring Pout. His passion for structured problem-solving, stakeholder communication, and venture design is exceptional.</blockquote>
+          <figcaption><img src="img/christy-aronson.jpg" alt="" width="160" height="160" ><div><strong>Christy Aronson</strong><span>Business strategy lead, Microsoft</span></div></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>Working with Pout in sustainability and climate finance was a remarkable experience. He grasps multi-layered system dynamics quickly and converts them into viable initiatives.</blockquote>
+          <figcaption><img src="img/osabutey-ofori.jpg" alt="" width="160" height="160" ><div><strong>Dr. Osabutey Ofori</strong><span>Lecturer and climate researcher</span></div></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="block contact" id="contact" aria-labelledby="con-h">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 id="con-h">Let's work together</h2>
+        <p class="label" style="margin-top:1rem;max-width:44ch;font-size:var(--step-0)">I'm looking for roles in corporate strategy, climate finance and policy research, and I'm glad to talk about partnerships on carbon market transparency.</p>
+        <ul class="channels">
+          <li><span class="label">Email</span><span class="val"><a href="mailto:poutchopj@gmail.com" id="email">poutchopj@gmail.com</a><button class="copy" type="button" data-copy="poutchopj@gmail.com">Copy</button></span></li>
+          <li><span class="label">LinkedIn</span><span class="val"><a href="https://www.linkedin.com/in/pout-chop-jal" target="_blank" rel="noopener">linkedin.com/in/pout-chop-jal</a></span></li>
+          <li><span class="label">Phone</span><span class="val"><a href="tel:+233594303507">+233 59 430 3507</a><button class="copy" type="button" data-copy="+233594303507">Copy</button></span></li>
+          <li><span class="label">Location</span><span class="val">Accra, Ghana (GMT)</span></li>
+        </ul>
+      </div>
+      <form class="msg" id="msg-form" novalidate>
+        <div class="row2">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">Your email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="field">
+          <label for="f-topic">What it's about</label>
+          <select id="f-topic" name="topic">
+            <option>A role or job opportunity</option>
+            <option>A partnership with Carbon Clarity</option>
+            <option>Research collaboration</option>
+            <option>Speaking or media</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+        <button class="btn btn-solid" type="submit">Write the email</button>
+        <p class="form-note" id="form-note" aria-live="polite">This opens your email app with the message filled in.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Pout Chop Jal</span>
+    <span>Mastercard Foundation Scholar, Ashesi University</span>
   </div>
-</section>
+</footer>
 
-    <!-- ======= Leadership & Honors Section ======= -->
-    <section id="leadership" class="services section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Leadership & Honors</h2>
-        <p>International recognitions, hackathons, and global service contributions.</p>
-      </div>
+<script>
+(() => {
+  /* ---------- theme toggle ---------- */
+  const root = document.documentElement, btn = document.getElementById('theme-btn');
+  const store = { get(){ try { return localStorage.getItem('pcj-theme'); } catch(e){ return null; } },
+                  set(v){ try { localStorage.setItem('pcj-theme', v); } catch(e){} } };
+  const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  const saved = store.get(); if (saved) root.dataset.theme = saved;
+  const label = () => btn.setAttribute('aria-label', isDark() ? 'Switch to light theme' : 'Switch to dark theme');
+  label();
+  btn.addEventListener('click', () => { const next = isDark() ? 'light' : 'dark'; root.dataset.theme = next; store.set(next); label(); });
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
+  /* ---------- Africa dot map ---------- */
+  const africa = [[-5.9,35.8],[-1,35.1],[3,36.8],[10.2,37.2],[11,35.2],[10.1,33.8],[15,32.3],[19,30.3],[20.1,32.1],[23,32.6],[29.9,31.2],[32.3,31.3],[32.6,29.9],[34.8,28],[35.5,23.9],[37.2,19.6],[39.5,15.5],[43.3,12.6],[44,10.4],[51.2,11.8],[50.5,9],[48,4.5],[45.3,2],[42.5,-0.5],[39.7,-4],[39.3,-6.8],[40.5,-10.5],[40.7,-15],[36.9,-17.9],[35.5,-21],[35.5,-24],[32.6,-25.9],[32.9,-28.8],[31,-29.9],[27.9,-33],[25.6,-34],[20,-34.8],[18.4,-33.9],[17.9,-32],[15.2,-27],[14.5,-22.9],[11.8,-17.3],[13.2,-12.6],[13.2,-8.8],[12.2,-6],[11.8,-4.8],[9.3,-0.7],[9.6,2.9],[9.7,4],[8.5,4.5],[6,4.3],[4.4,6.4],[1.2,6.1],[-0.2,5.5],[-2,4.8],[-4,5.2],[-7.5,4.4],[-9.5,5.4],[-11.5,6.9],[-13.2,8.5],[-15,10.8],[-16.7,12.4],[-17.5,14.7],[-16.5,19.4],[-17,21],[-15,24.5],[-13.5,27.6],[-9.8,29.9],[-9.6,32.5],[-6.8,34]];
+  const madagascar = [[49.3,-12],[50.4,-15.5],[49.5,-17.5],[47.3,-25],[45.2,-25.5],[43.7,-23.6],[43.3,-21.5],[44.4,-19],[44,-16.8],[46.2,-15.7],[48,-13.5]];
+  const inside = (x, y, poly) => { let c = false; for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+      const [xi, yi] = poly[i], [xj, yj] = poly[j];
+      if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c; } return c; };
+  const K = 10, X = lon => (lon + 18) * K, Y = lat => (38 - lat) * K;
+  const NS = 'http://www.w3.org/2000/svg';
+  const accra = [-0.19, 5.6];
+  const g = document.getElementById('dots'), frag = document.createDocumentFragment();
+  const step = 1.7;
+  for (let r = 0, lat = 37; lat > -36; lat -= step, r++) {
+    for (let lon = -18 + (r % 2 ? step / 2 : 0); lon < 52; lon += step) {
+      if (!inside(lon, lat, africa) && !inside(lon, lat, madagascar)) continue;
+      const c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', X(lon).toFixed(1)); c.setAttribute('cy', Y(lat).toFixed(1)); c.setAttribute('r', 4.6);
+      c.setAttribute('class', 'land');
+      const d = Math.hypot(lon - accra[0], lat - accra[1]);
+      c.style.setProperty('--d', (d * 0.018).toFixed(3) + 's');
+      frag.appendChild(c);
+    }
+  }
+  g.appendChild(frag);
 
-          <div class="col-lg-6 col-md-6">
-            <div class="card border-0 shadow-sm p-4 h-100">
-              <div class="d-flex align-items-center mb-3">
-                <i class="bi bi-trophy-fill text-warning fs-2 me-3"></i>
-                <div>
-                  <h5 class="mb-0 fw-bold">Sector Impact Award (AL for Infrastructure)</h5>
-                  <small class="text-muted">Johannesburg, South Africa &middot; Aug 2026</small>
-                </div>
-              </div>
-              <p class="text-muted">Honored at the African Leadership Festival for exceptional sector leadership, cross-border advocacy, and sustainable infrastructure research.</p>
-            </div>
-          </div>
+  const pins = [
+    { name: 'Juba', sub: 'Where I grew up', at: [31.6, 4.85], k: 'o', dx: 18, dy: -14 },
+    { name: 'Accra', sub: 'Where I work now', at: [-0.19, 5.6], k: 'c', dx: 4, dy: 40, anchor: 'middle' },
+    { name: 'Mozambique', sub: 'Hackathon win', at: [35.5, -18.5], k: 'o', dx: 22, dy: -2 },
+    { name: 'Johannesburg', sub: 'Sector Impact Award', at: [28.05, -26.2], k: 'n', dx: -20, dy: 2, anchor: 'end' }
+  ];
+  const pg = document.getElementById('pins');
+  pins.forEach(p => {
+    const x = X(p.at[0]), y = Y(p.at[1]);
+    const grp = document.createElementNS(NS, 'g'); grp.setAttribute('class', 'pin ' + p.k);
+    grp.innerHTML = `<circle class="halo" cx="${x}" cy="${y}" r="16"></circle><circle class="core" cx="${x}" cy="${y}" r="7.5"></circle>
+      <text x="${x + p.dx}" y="${y + p.dy}" text-anchor="${p.anchor || 'start'}">${p.name}</text>
+      <text class="sub" x="${x + p.dx}" y="${y + p.dy + 22}" text-anchor="${p.anchor || 'start'}">${p.sub}</text>`;
+    pg.appendChild(grp);
+  });
+  const [jx, jy] = [X(31.6), Y(4.85)], [ax, ay] = [X(-0.19), Y(5.6)];
+  document.getElementById('route').setAttribute('d', `M${jx},${jy} Q${(jx + ax) / 2},${jy - 150} ${ax},${ay}`);
 
-          <div class="col-lg-6 col-md-6">
-            <div class="card border-0 shadow-sm p-4 h-100">
-              <div class="d-flex align-items-center mb-3">
-                <i class="bi bi-award-fill text-primary fs-2 me-3"></i>
-                <div>
-                  <h5 class="mb-0 fw-bold">1st Place Winner: Climate Inclusion Hackathon</h5>
-                  <small class="text-muted">IOM Mozambique &middot; Feb 2026</small>
-                </div>
-              </div>
-              <p class="text-muted">Awarded top prize among 8 international teams for the design of the Visual Bridge carbon accounting transparency solution.</p>
-            </div>
-          </div>
+  /* ---------- project filter ---------- */
+  const chips = document.querySelectorAll('.chip'), items = document.querySelectorAll('.project');
+  chips.forEach(ch => ch.addEventListener('click', () => {
+    const f = ch.dataset.filter;
+    chips.forEach(c => c.setAttribute('aria-pressed', String(c === ch)));
+    items.forEach(it => { it.hidden = !(f === 'all' || it.dataset.areas.split(' ').includes(f)); });
+  }));
 
-          <div class="col-lg-6 col-md-6">
-            <div class="card border-0 shadow-sm p-4 h-100">
-              <div class="d-flex align-items-center mb-3">
-                <i class="bi bi-star-fill text-info fs-2 me-3"></i>
-                <div>
-                  <h5 class="mb-0 fw-bold">Top Innovator: Ashesi x Microsoft</h5>
-                  <small class="text-muted">Accra, Ghana &middot; Apr 2026</small>
-                </div>
-              </div>
-              <p class="text-muted">Selected as a top innovator for spatio-temporal data modeling and commuting fluidity metrics in urban African mobility.</p>
-            </div>
-          </div>
+  /* ---------- copy buttons ---------- */
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', async () => {
+    const t = b.dataset.copy, done = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy', 1800); };
+    try { await navigator.clipboard.writeText(t); done(); }
+    catch (e) { const s = getSelection(), r = document.createRange(); r.selectNodeContents(b.previousElementSibling); s.removeAllRanges(); s.addRange(r); b.textContent = 'Press Ctrl+C'; }
+  }));
 
-          <div class="col-lg-6 col-md-6">
-            <div class="card border-0 shadow-sm p-4 h-100">
-              <div class="d-flex align-items-center mb-3">
-                <i class="bi bi-globe2 text-success fs-2 me-3"></i>
-                <div>
-                  <h5 class="mb-0 fw-bold">International Literary Judge</h5>
-                  <small class="text-muted">Queen's Commonwealth Essay Competition &middot; 2026</small>
-                </div>
-              </div>
-              <p class="text-muted">Evaluated international creative writing and expository entries, delivering standardized critical feedback for global youth writers.</p>
-            </div>
-          </div>
+  /* ---------- contact form: composes an email ---------- */
+  const form = document.getElementById('msg-form'), note = document.getElementById('form-note');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const v = id => document.getElementById(id).value.trim();
+    const missing = [['f-name','your name'],['f-email','your email'],['f-msg','a message']].filter(([id]) => !v(id)).map(([,n]) => n);
+    if (missing.length) { note.textContent = 'Add ' + missing.join(', ') + ' before sending.'; return; }
+    if (!/^\S+@\S+\.\S+$/.test(v('f-email'))) { note.textContent = 'Check your email address. It should look like name@example.com.'; return; }
+    const subject = `${v('f-topic')}: from ${v('f-name')}`;
+    const body = `${v('f-msg')}\n\n${v('f-name')}\n${v('f-email')}`;
+    location.href = `mailto:poutchopj@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    note.textContent = 'Your email app should open with the message ready. If it doesn’t, copy the address on the left.';
+  });
 
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Endorsements / Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Professional Endorsements</h2>
-        <p>Insights from academic mentors, corporate leaders, and project collaborators.</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": { "slidesPerView": 1, "spaceBetween": 30 },
-                "768": { "slidesPerView": 2, "spaceBetween": 30 },
-                "1200": { "slidesPerView": 3, "spaceBetween": 30 }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item p-4 bg-light rounded shadow-sm h-100">
-                <p class="fst-italic">
-                  <i class="bi bi-quote quote-icon-left text-primary"></i>
-                  Pout's analytical skills are truly impressive. He quickly grasps complex business challenges and proposes well-researched, practical solutions. He is a valuable asset to any team.
-                  <i class="bi bi-quote quote-icon-right text-primary"></i>
-                </p>
-                <div class="d-flex align-items-center mt-4">
-                  <img src="img/testimonials/testimonial-1.jpeg" class="testimonial-img flex-shrink-0 rounded-circle me-3" alt="Gamunu Jayasinghe" style="width: 50px; height: 50px; object-fit: cover;">
-                  <div>
-                    <h5 class="mb-0 fw-bold">Gamunu Jayasinghe</h5>
-                    <small class="text-muted">Strategic Advisor & Mentor</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item p-4 bg-light rounded shadow-sm h-100">
-                <p class="fst-italic">
-                  <i class="bi bi-quote quote-icon-left text-primary"></i>
-                  Over the past year, I've had the pleasure of mentoring Pout. His passion for structured problem-solving, stakeholder communication, and venture design is exceptional.
-                  <i class="bi bi-quote quote-icon-right text-primary"></i>
-                </p>
-                <div class="d-flex align-items-center mt-4">
-                  <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0 rounded-circle me-3" alt="Christy Aronson" style="width: 50px; height: 50px; object-fit: cover;">
-                  <div>
-                    <h5 class="mb-0 fw-bold">Christy Aronson</h5>
-                    <small class="text-muted">Business Strategy Lead, Microsoft</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item p-4 bg-light rounded shadow-sm h-100">
-                <p class="fst-italic">
-                  <i class="bi bi-quote quote-icon-left text-primary"></i>
-                  Working with Pout in sustainability and climate finance was a remarkable experience. He grasps multi-layered system dynamics quickly and converts them into viable initiatives.
-                  <i class="bi bi-quote quote-icon-right text-primary"></i>
-                </p>
-                <div class="d-flex align-items-center mt-4">
-                  <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0 rounded-circle me-3" alt="Dr. Osabutey Ofori" style="width: 50px; height: 50px; object-fit: cover;">
-                  <div>
-                    <h5 class="mb-0 fw-bold">Dr. Osabutey Ofori</h5>
-                    <small class="text-muted">Lecturer & Climate Researcher</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination mt-4 position-relative"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Connect & Collaborate</h2>
-        <p>Available for high-impact roles in Corporate Strategy, Climate Finance, and Policy Research.</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-            <div class="info-wrap p-4 bg-white rounded shadow-sm h-100">
-              <div class="info-item d-flex mb-3">
-                <i class="bi bi-geo-alt fs-4 text-primary me-3"></i>
-                <div>
-                  <h6 class="fw-bold mb-1">Location:</h6>
-                  <p class="text-muted mb-0">Accra, Ghana</p>
-                </div>
-              </div>
-
-              <div class="info-item d-flex mb-3">
-                <i class="bi bi-telephone fs-4 text-primary me-3"></i>
-                <div>
-                  <h6 class="fw-bold mb-1">Direct Call:</h6>
-                  <p class="mb-0"><a href="tel:+233594303507" class="text-decoration-none text-muted">+233 594 303 507</a></p>
-                </div>
-              </div>
-
-              <div class="info-item d-flex mb-3">
-                <i class="bi bi-envelope fs-4 text-primary me-3"></i>
-                <div>
-                  <h6 class="fw-bold mb-1">Email:</h6>
-                  <p class="mb-0"><a href="mailto:poutchopj@gmail.com" class="text-decoration-none text-muted">poutchopj@gmail.com</a></p>
-                </div>
-              </div>
-
-              <div class="info-item d-flex mb-4">
-                <i class="bi bi-linkedin fs-4 text-primary me-3"></i>
-                <div>
-                  <h6 class="fw-bold mb-1">LinkedIn:</h6>
-                  <p class="mb-0"><a href="https://linkedin.com/in/pout-chop-jal" target="_blank" rel="noopener noreferrer" class="text-decoration-none">linkedin.com/in/pout-chop-jal</a></p>
-                </div>
-              </div>
-
-              <div class="map-responsive rounded overflow-hidden">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15885.836881792998!2d-0.21970224999999998!3d5.59750035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9a797275d275%3A0x7d6f5550a2948508!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1717328905380!5m2!1sen!2sgh" style="border:0; width: 100%; height: 200px;" allowfullscreen="" loading="lazy"></iframe>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="p-4 bg-white rounded shadow-sm h-100">
-              <form action="https://formspree.io/f/your_form_id_here" method="POST" class="php-email-form">
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <label for="name-field" class="form-label fw-semibold">Your Name</label>
-                    <input type="text" name="name" id="name-field" class="form-control" placeholder="Jane Doe" required>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="email-field" class="form-label fw-semibold">Your Email</label>
-                    <input type="email" class="form-control" name="email" id="email-field" placeholder="jane@example.com" required>
-                  </div>
-
-                  <div class="col-md-12">
-                    <label for="subject-field" class="form-label fw-semibold">Subject</label>
-                    <input type="text" class="form-control" name="subject" id="subject-field" placeholder="Partnership / Opportunity" required>
-                  </div>
-
-                  <div class="col-md-12">
-                    <label for="message-field" class="form-label fw-semibold">Message</label>
-                    <textarea class="form-control" name="message" rows="6" id="message-field" placeholder="Share your message or inquiry..." required></textarea>
-                  </div>
-
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Sending...</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent successfully. Thank you!</div>
-                    <button type="submit" class="btn btn-primary px-5 py-2 mt-2">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer py-4 bg-dark text-white text-center">
-    <div class="container">
-      <p class="mb-1">&copy; 2026 <strong>Pout Chop Jal</strong>. All Rights Reserved.</p>
-      <small class="text-muted">Mastercard Foundation Scholar &middot; Ashesi University</small>
-    </div>
-  </footer>
-
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
-  <script src="vendor/aos/aos.js"></script>
-  <script src="vendor/typed.js/typed.umd.js"></script>
-  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS Initialization -->
-  <script src="js/main.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      if (typeof Typed !== 'undefined') {
-        new Typed('.typed', {
-          strings: [
-            "Founder @ Carbon Clarity",
-            "Climate Finance & Policy Researcher",
-            "Business Administration Graduate",
-            "Mastercard Foundation Scholar",
-            "Commuter Fluidity Co-Creator"
-          ],
-          typeSpeed: 45,
-          backSpeed: 25,
-          backDelay: 2000,
-          loop: true
-        });
-      }
-      if (typeof PureCounter !== 'undefined') {
-        new PureCounter();
-      }
-    });
-  </script>
-
+  /* ---------- current section in nav ---------- */
+  const links = [...document.querySelectorAll('.nav-link')];
+  const io = new IntersectionObserver(es => es.forEach(en => {
+    if (en.isIntersecting) links.forEach(l => l.setAttribute('aria-current', String(l.getAttribute('href') === '#' + en.target.id)));
+  }), { rootMargin: '-45% 0px -50% 0px' });
+  ['work','experience','honors','contact'].forEach(id => io.observe(document.getElementById(id)));
+})();
+</script>
 </body>
 </html>
