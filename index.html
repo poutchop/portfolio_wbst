@@ -188,7 +188,7 @@ section.block { padding-block: clamp(3.5rem, 8vw, 6.5rem); border-top: 1px solid
 }
 .project[hidden] { display: none !important; }
 .figure { color: var(--k); }
-.figure b { display:block; font-family: var(--serif); font-weight: 500; font-size: var(--step-4); line-height: .95; letter-spacing: -0.02em; font-variant-numeric: lining-nums; }
+.figure b { display:block; font-family: var(--serif); font-weight: 500; font-size: clamp(2.4rem, 1.7rem + 2.6vw, 4.1rem); line-height: .95; letter-spacing: -0.02em; font-variant-numeric: lining-nums; }
 .figure span { display:block; font-size: var(--step--1); color: var(--muted); margin-top: .5rem; line-height: 1.35; max-width: 16ch; }
 .project h3 { font-size: var(--step-2); }
 .tags { display:flex; flex-wrap:wrap; gap:.4rem; margin: .7rem 0 .9rem; }
@@ -379,9 +379,9 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
           <a class="btn btn-line" href="#contact">Get in touch</a>
         </div>
         <ul class="proof">
-          <li class="o"><b>1st</b><span>of 8 teams at the IOM Mozambique hackathon</span></li>
+          <li class="o"><b>2</b><span>competition wins in 2026, with IOM Mozambique and Ashesi × Microsoft</span></li>
           <li class="n"><b>54</b><span>African countries in the visa policy matrix I audited</span></li>
-          <li class="c"><b>40%</b><span>faster route assessments with the Commuter Fluidity Index</span></li>
+          <li class="c"><b>2,770</b><span>cookstove households in our Mozambique carbon plan</span></li>
         </ul>
       </div>
       <figure class="map-fig">
@@ -526,21 +526,34 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
         </li>
 
         <li class="project k-n" data-areas="policy">
-          <div class="figure"><b>40%</b><span>faster route assessments</span></div>
+          <div class="figure"><b>15×</b><span>the weight our index gives a full trotro over a private car</span></div>
           <div class="body">
-            <h3>Commuter Fluidity Index</h3>
-            <div class="tags"><span class="tag">Policy &amp; research</span></div>
-            <p>A measure of economic friction in Accra's transit, built by a team of four in the Ashesi Microsoft Future Builders Programme. Our team was named a winner.</p>
+            <h3 id="accra-flow">Accra-Flow: smarter trotro traffic for Accra</h3>
+            <div class="tags"><span class="tag">Policy &amp; research</span><span class="tag k-o">Product &amp; design</span></div>
+            <p>Most of Accra's commuters ride trotros and okadas, yet traffic signals treat a full 28-seat minibus like an empty private car. Our team of four built Accra-Flow in the Microsoft × Ashesi Future Builders AI Skilling Program and was named a winner of its case competition.</p>
+            <div class="shots">
+              <img src="img/accra-flow-demo.jpg" alt="A teammate presenting the Accra-Flow N4 corridor simulation to judges and students" width="1280" height="803" loading="lazy">
+              <img src="img/future-builders-team.jpg" alt="Pout Chop Jal with his three teammates in Future Builders hoodies" width="960" height="609" loading="lazy">
+              <img src="img/future-builders-judges.jpg" alt="The team with two of the competition judges outside the Ashesi building" width="960" height="485" loading="lazy">
+            </div>
             <ul class="did">
-              <li>Mapped economic friction across more than 12 transit routes in Accra using operational data.</li>
-              <li>Surveyed over 200 commuters and turned the patterns into five evidence-based policy recommendations.</li>
-              <li>Built the index that makes transport planning assessments 40% faster.</li>
+              <li>Started with the Commuter Fluidity Index, which counts people rather than vehicles, so a full trotro is worth about 15 times a private car.</li>
+              <li>Grew it into intersections that cooperate as learning agents, fed by roadside cameras that process video on the device so no footage leaves the camera.</li>
+              <li>Reached drivers through USSD alerts that work on any phone, with mobile-money fuel rebates for drivers who take part.</li>
+              <li>Planned a pilot on the Madina–Tetteh Quarshie N4 corridor, targeting peak journeys at least 20% shorter.</li>
             </ul>
+            <div class="dossier" aria-label="Future Builders documents">
+              <a class="doc" href="docs/accra-flow-case-study.pdf" target="_blank" rel="noopener"><img src="docs/cover-accra-flow-case-study.jpg" alt="" width="340" height="440" loading="lazy"><span><b>Case study, revised</b><small>10 pages, PDF, Apr 2026</small></span></a>
+              <a class="doc" href="docs/accra-flow-demo-deck.pdf" target="_blank" rel="noopener"><img src="docs/cover-accra-flow-demo-deck.jpg" alt="" width="400" height="226" loading="lazy"><span><b>Demo deck</b><small>12 slides, PDF</small></span></a>
+              <a class="doc" href="docs/future-builders-winner-letter.pdf" target="_blank" rel="noopener"><img src="docs/cover-future-builders-winner-letter.jpg" alt="" width="331" height="468" loading="lazy"><span><b>Winner's letter</b><small>Ashesi Business Administration, Oct 2026</small></span></a>
+              <a class="doc doc-text" href="docs/accra-flow-case-study-competition.pdf" target="_blank" rel="noopener"><span class="sheet"><b>6 pages</b>Shorter version of<br>the case study</span><span><b>Case study, short version</b><small>PDF, Apr 2026</small></span></a>
+              <a class="doc doc-text" href="https://accra-flow.vercel.app" target="_blank" rel="noopener"><span class="sheet"><b>Live</b>N4 corridor<br>simulation</span><span><b>Accra-Flow demo</b><small>accra-flow.vercel.app</small></span></a>
+            </div>
           </div>
           <div class="meta">
-            <div><strong>Result</strong>Winner, Future Builders Programme</div>
-            <div><strong>Role</strong>Researcher, Feb – Apr 2026</div>
-            <a href="https://drive.google.com/drive/folders/1hBtLvpGVe193ArgSZsOnYwFCor5K9i-i/" target="_blank" rel="noopener">View the study</a>
+            <div><strong>Result</strong>Winner, Future Builders case competition</div>
+            <div><strong>Team</strong>Adaboh Kwame Twum, Cajetan Songwae, Shaun Esua-Mensah, Pout Chop Jal</div>
+            <div><strong>Mentors</strong>Moses Igbinigie and Elan Jennings-Jones (Microsoft); Dr. Nana Kwasi Karikari (faculty advisor)</div>
           </div>
         </li>
 
@@ -592,7 +605,7 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
       <div class="caps">
         <div class="cap"><h3>Climate finance and carbon markets</h3><p>dMRV design, credit verification models, linking projects to voluntary carbon markets.</p><p class="ev"><em>Used in </em>Carbon Clarity, Visual Bridge</p></div>
         <div class="cap"><h3>Policy and regulatory research</h3><p>Cross-border policy matrices, compliance risk, comparative briefs for advocacy.</p><p class="ev"><em>Used in </em>Visa and mobility matrix</p></div>
-        <div class="cap"><h3>Quantitative and field research</h3><p>Survey design, SERVQUAL, index construction, interviews with operators in the field.</p><p class="ev"><em>Used in </em>Fluidity Index, capstone, clean cookstove fieldwork</p></div>
+        <div class="cap"><h3>Quantitative and field research</h3><p>Survey design, SERVQUAL, index construction, interviews with operators in the field.</p><p class="ev"><em>Used in </em>Accra-Flow, capstone, clean cookstove fieldwork</p></div>
         <div class="cap"><h3>Strategy and valuation</h3><p>Pricing and revenue models, competitive strategy, market entry and project management.</p><p class="ev"><em>Used in </em>Farmer Delivery Enterprise, Carbon Clarity</p></div>
         <div class="cap"><h3>Data products and prototyping</h3><p>Turning datasets into tools people can use: classification systems, dashboards, interfaces.</p><p class="ev"><em>Used in </em>Visual Bridge, visa barrier classifier</p></div>
         <div class="cap"><h3>Partnerships across borders</h3><p>Aligning funders, governments, universities and companies around one deliverable.</p><p class="ev"><em>Used with </em>Global Affairs Canada, Catalyste+, Microsoft, IOM</p></div>
@@ -651,11 +664,11 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
             <li>
               <div class="when">Feb – Apr 2026</div>
               <div>
-                <h4>Researcher</h4>
-                <p class="org">Microsoft × Ashesi University, Accra</p>
+                <h4>Case Study Researcher</h4>
+                <p class="org">Microsoft × Ashesi Future Builders AI Skilling Program, Accra</p>
                 <ul>
-                  <li>Mapped economic friction across 12+ transit routes and surveyed 200+ commuters.</li>
-                  <li>Built the Commuter Fluidity Index, making planning assessments 40% faster. The team won the Future Builders Programme.</li>
+                  <li>Co-designed Accra-Flow, an AI framework that gives trotro traffic priority at Accra's intersections, starting from the Commuter Fluidity Index.</li>
+                  <li>Our team won the programme's case competition.</li>
                 </ul>
               </div>
             </li>
@@ -764,12 +777,10 @@ form.msg { display:grid; gap: 1rem; align-content: start; }
             <div>
               <h3>Winner, Ashesi Microsoft Future Builders Programme</h3>
               <p class="where">Ashesi University and Microsoft</p>
-              <p class="desc">My team of four was named a winner for the Commuter Fluidity Index, our data-driven tool for Accra's transit. The Business Administration Department formally recognized the team for creativity, problem-solving and execution.</p>
+              <p class="desc">My team of four won the case competition with Accra-Flow, an AI framework for Accra's trotro traffic. The Business Administration Department formally recognized the team for creativity, problem-solving and execution. <a href="#accra-flow">See the documents</a></p>
               <figure class="clip">
-                <video controls preload="none" playsinline poster="img/future-builders-poster.jpg" width="672" height="448">
-                  <source src="img/future-builders.mp4" type="video/mp4">
-                </video>
-                <figcaption>AI-generated video based on the Future Builders Programme at Ashesi University</figcaption>
+                <img src="img/future-builders-judges.jpg" alt="Pout Chop Jal and his teammates with two of the judges at Ashesi University" width="960" height="485" loading="lazy" style="border-radius:4px">
+                <figcaption>With teammates and judges at Ashesi University</figcaption>
               </figure>
             </div>
           </li>
